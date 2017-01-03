@@ -31,18 +31,43 @@ function add() {
     h1[1].innerHTML=(hours%10==hours?"0"+hours:hours)+":"+(minutes%10==minutes?"0"+minutes:minutes)+":"+(seconds%10==seconds?"0"+seconds:seconds);
     repeat();
 }
-
-reset.addEventListener("click",function(){
+function resetit(){
     h1[1].innerHTML="00:00:00";
     seconds=0;
     hours=0;
     minutes=0;
-});
-
+    h1[4].innerHTML="00:00";
+}
 start.addEventListener("click",repeat);
-
 stop.addEventListener("click",function () {
     clearTimeout(temp);
 });
+reset.addEventListener("click",resetit);
 
+var start1=document.getElementById("start1"),
+    stop1=document.getElementById("stop1"),
+    dump=document.getElementById("timermin").value,
+    seconds1=59,
+    temp1;
+ var minutes1=parseInt(dump)-1 | 0;
+start1.addEventListener("click",subtract);
 
+function subtract() {
+    seconds1--;
+    if(seconds1<0){
+        seconds1=59;
+        minutes1--;
+    }
+    if(minutes1<0){
+        temp=setTimeout(beep,1000);
+    }
+    h1[4].innerHTML=(minutes1%10==minutes1?"0"+minutes1:minutes1)+":"+(seconds1%10==seconds1?"0"+seconds1:seconds1);
+    repeatit();
+}
+function repeatit() {
+    temp1=setTimeout(subtract,1000);
+}
+stop1.addEventListener("click",function () {
+    clearTimeout(temp1);
+    resetit();
+});
