@@ -69,6 +69,8 @@ function playagain() {
     var y=confirm("New Game?")
     if (y==true)
         location.reload(true);
-    else
+    else{
         alert("Thank You for playing");
+        window.history.back();
+    }
 }
