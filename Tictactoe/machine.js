@@ -11,7 +11,7 @@ var filled=new  Array(),
 var player1 = "Computer's",player2="Your",
     h6=document.getElementsByTagName("h6"),
     comp,
-    see=false;// to check if you are playing with computer or not
+    see=true;// to check if you are playing with computer or not
 window.onload=function () {
 
     for(var i=0;i<9;i++){
@@ -22,6 +22,7 @@ window.onload=function () {
 function inform() {
     player1=prompt("Enter player name who will be X","Enter Name");
     player2=prompt("Enter player name who will be O","Enter Name");
+    see=false;
     h6[0].innerHTML=player2+" turn";
 
 }
