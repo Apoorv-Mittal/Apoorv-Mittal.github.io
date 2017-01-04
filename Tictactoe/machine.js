@@ -8,7 +8,7 @@ var filled=new  Array(),
     content=new Array(),
     computerturn=false;
 
-var player1 = "Computer",player2="Your",
+var player1 = "Computer's",player2="Your",
     h6=document.getElementsByTagName("h6"),
     comp,
     see=false;// to check if you are playing with computer or not
@@ -65,8 +65,10 @@ function move(num) {
         }
         if (turn%2==0)
             h6[0].innerHTML=player1+" turn";
-        else
+        else{
+            
             h6[0].innerHTML=player2+" turn";
+        }
     }
     else {
         alert("the box is already filled")
@@ -81,8 +83,11 @@ function checkwinner(symbol) {
         if (content[winningcombo[a][0]] == symbol && content[winningcombo[a][1]] == symbol && content[winningcombo[a][2]] == symbol) {
             if (symbol=='X')
                 alert(player1 + " WON!");
-            else if(symbol=='O')
+            else if(symbol=='O'){
+                if(player2=="Your")
+                    player2="YOU" ;
                 alert(player2+" WON!");
+            }
             playagain();
         }
     }
