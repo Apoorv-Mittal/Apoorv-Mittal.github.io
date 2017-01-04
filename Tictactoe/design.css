@@ -12,7 +12,7 @@ h1{
 canvas{
     height:50px;
     width: 50px;
-    border: 1px solid midnightblue;
+    border-style:outset;
     position:relative;
     -webkit-animation:canvasAnimation 5s;
     background-color: aliceblue;
