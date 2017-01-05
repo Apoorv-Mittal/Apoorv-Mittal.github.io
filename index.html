@@ -2,67 +2,152 @@
 <html>
 <head>
 	<title>Apoorv Mittal</title>
-</head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href='http://fonts.googleapis.com/css?family=Cormorant+Upright' rel='stylesheet'  type='text/css'>
-<body class="jumbotron" >
-<center>
-	<h1 style="font-family:'Cormorant Upright', serif; font-size: 100px; color: darkblue" >Who is Apoorv?
-	</h1>
-	<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/1937018_953312141402602_4557654103894548838_n.jpg?oh=533086479c4ebd0ea77b89368138fd17&oe=58ED8563" class="img-rounded" width="300" height="200" alt="IT IS ME!!!">
-	<p><strong>Education</strong>
-	<br>
-	<i><a href="http://www.umd.edu/"><strong>University of Maryland, College Park</strong></a></i>
-	<br>
-		Bachelor of Science, Computer Science<br>Will graduate on May 2020<br>Cumulative GPA: 3.63
-	</p>
-	<p>
-		<strong>Related Courses</strong>
-		<br>Object Oriented Programming
-		<br>Theory of Artificial Intelligence
-	</p>
-	<p>
-		<strong>Technical Skills</strong>
-		<br>Languages: Java, HTML, CSS, Javascript
-		<br>Operating Systems: Windows, MacOS, Linux, Andriod, iOS
-	</p>
-	<p><strong>Projects Completed</strong>
-		<br>
-		<a href="\Tictactoe\Skeleton.html">Tic-tac-toe: </a>A simple tic-tac toe game with some animations.<br> Play this game with either a computer or another player. 
-		<br>
-		<br>
-		<a href="\Calculator\Calculator.html">Calculator: </a>A calculator made by HTML, CSS and Javascript.
-		<br>
-		<br>
-		<a href="\Stopwatch\skeleton.html">Stopwatch and Timer: </a>Stopwatch and Timer made by using HTML and javascript. The stopwatch also plays a<br> beep sound every hour and the timer play beeps every second the time is done.  
-	</p>
-	<p><strong>Projects Under Work</strong>
-		<br>
-		<a href="\Texteditor\skeleton.html">Text Editor: </a>A texteditor just like google docs which have the ability to open a file from your computer,<br> save the file on your laptop, and able to edit the text.
-	</p>
-	<p>
-		<strong>Experience</strong>
-		<br><i>2016: </i><a href="https://hophacks.com/" >HopHacks</a>, experienced a hackathon and created a social networking cross platform <br>app called <a href="http://conneve.com">conneve</a> in which you meet people before a event.<br>
-		<br><i>September 2016: </i><a href="https://msft3c.com/">Microsoft Coding Competition</a>, got coding competition experience during the first week of college<br>
-		<br><i>December 2015: </i><a href="https://www.facebook.com/questmodelun/?ref=py_c"> QUEST International Model United Nations,</a> represented Albania in General Assembly, researched <br> challenging problems faced by Small Island Developing States and solved an immediate crisis<br>
-		<br><i>2015-2016: </i>School Captain, responsible for organizing, and supervising any school events
-	</p>
-	<p><strong>Volunteer</strong>
-	<br><i>2015: </i><a href="http://wastewarriors.org/">Waste Warrior</a>, accounting, researching, helping with the day to day activities, helped cleaned <br> up my home city of Dehradun
-	</p>
-</center>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p style="font-size:17px"><i>Contact Me </i>
-<br>
-Tel: (240)-660-6270
-Email: apoorv@terpmail.umd.edu | mittal.apoorv2012@gmail.com
-<a href="https://www.facebook.com/apoorv.mittal.54" >Facebook</a> | <a href="https://www.linkedin.com/in/apoorv-mittal-088a21126?trk=nav_responsive_tab_profile_pic">linkedln</a>
-</p>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Cormorant+Upright' rel='stylesheet'  type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+<style>
+	div{
+		text-align: center;
+	}
+	ul{
+		width: 100%;
+		background-color: white;
+		position: fixed;
+		z-index: 100
+	}
+	h1{
+		font-family:'Cormorant Upright', serif;
+		font-size: 100px;
+		color: darkblue;
+	}
+</style>
+<body >
+	<nav class="navbar ">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+				<!--<li class="dropdown">-->
+					<!--<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects-->
+						<!--<span class="caret"></span></a>-->
+					<!--<ul class="dropdown-menu">-->
+						<!--<li><a href="#">Submenu 1-1</a></li>-->
+						<!--<li><a href="#">Submenu 1-2</a></li>-->
+						<!--<li><a href="#">Submenu 1-3</a></li>-->
+					<!--</ul>-->
+				<!--</li>-->
+				<li><a data-toggle="tab" href="#menu2">Projects</a> </li>
+				<li><a data-toggle="tab" href="#menu3">Contact Me</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="tab-content container">
+		<!--<div id="home" class="tab-pane fade in active">-->
+			<!--<h3>HOME</h3>-->
+			<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+		<!--</div>-->
+
+
+
+
+
+
+
+
+		<div id="home" class="tab-pane fade in active jumbotron">
+			<h1 style="font-family:'Cormorant Upright', serif; font-size: 100px; color: darkblue" >Who is Apoorv?</h1>
+				<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/1937018_953312141402602_4557654103894548838_n.jpg?oh=533086479c4ebd0ea77b89368138fd17&oe=58ED8563" class="img-rounded" width="300" height="200" alt="IT IS ME!!!">
+				<p><strong>Education</strong>
+				<br>
+					<i><a href="http://www.umd.edu/"><strong>University of Maryland, College Park</strong></a></i>
+				<br>
+					Bachelor of Science, Computer Science<br>Will graduate on May 2020<br>Cumulative GPA: 3.63
+				</p>
+				<p>
+					<strong>Related Courses</strong>
+					<br>Object Oriented Programming
+					<br>Theory of Artificial Intelligence
+				</p>
+				<p>
+					<strong>Technical Skills</strong>
+					<br>Languages: Java, HTML, CSS, Javascript
+					<br>Operating Systems: Windows, MacOS, Linux, Andriod, iOS
+				</p>
+				<p><strong>Projects Completed</strong>
+					<br>
+					<a href="\Tictactoe\Skeleton.html">Tic-tac-toe: </a>A simple tic-tac toe game with some animations.<br> Play this game with either a computer or another player.
+					<br>
+					<br>
+					<a href="\Calculator\Calculator.html">Calculator: </a>A calculator made by HTML, CSS and Javascript.
+					<br>
+					<br>
+					<a href="\Stopwatch\skeleton.html">Stopwatch and Timer: </a>Stopwatch and Timer made by using HTML and javascript. The stopwatch also plays a<br> beep sound every hour and the timer play beeps every second the time is done.
+				</p>
+				<p><strong>Projects Under Work</strong>
+					<br>
+					<a href="\Texteditor\skeleton.html">Text Editor: </a>A texteditor just like google docs which have the ability to open a file from your computer,<br> save the file on your laptop, and able to edit the text.
+				</p>
+				<p>
+					<strong>Experience</strong>
+					<br><i>2016: </i><a href="https://hophacks.com/" >HopHacks</a>, experienced a hackathon and created a social networking cross platform <br>app called <a href="http://conneve.com">conneve</a> in which you meet people before a event.<br>
+					<br><i>September 2016: </i><a href="https://msft3c.com/">Microsoft Coding Competition</a>, got coding competition experience during the first week of college<br>
+					<br><i>December 2015: </i><a href="https://www.facebook.com/questmodelun/?ref=py_c"> QUEST International Model United Nations,</a> represented Albania in General Assembly, researched <br> challenging problems faced by Small Island Developing States and solved an immediate crisis<br>
+					<br><i>2015-2016: </i>School Captain, responsible for organizing, and supervising any school events
+				</p>
+				<p><strong>Volunteer</strong>
+				<br><i>2015: </i><a href="http://wastewarriors.org/">Waste Warrior</a>, accounting, researching, helping with the day to day activities, helped cleaned <br> up my home city of Dehradun
+				</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p style="font-size:17px"><i>Contact Me </i>
+			<br>
+			Tel: (240)-660-6270 Email: apoorv@terpmail.umd.edu | mittal.apoorv2012@gmail.com <a href="https://www.facebook.com/apoorv.mittal.54" >Facebook</a> | <a href="https://www.linkedin.com/in/apoorv-mittal-088a21126?trk=nav_responsive_tab_profile_pic">linkedln</a>
+			</p>
+		</div>
+
+		<div id="menu2" class="tab-pane fade jumbotron">
+			<h1><i>Projects</i></h1>
+			<br>
+			<p><strong>Projects Completed</strong>
+				<br>
+				<a href="\Tictactoe\Skeleton.html">Tic-tac-toe: </a>A simple tic-tac toe game with some animations.<br> Play this game with either a computer or another player.
+				<br>
+				<br>
+				<a href="\Calculator\Calculator.html">Calculator: </a>A calculator made by HTML, CSS and Javascript.
+				<br>
+				<br>
+				<a href="\Stopwatch\skeleton.html">Stopwatch and Timer: </a>Stopwatch and Timer made by using HTML and javascript. The stopwatch also plays a<br> beep sound every hour and the timer play beeps every second the time is done.
+			</p>
+			<p><strong>Projects Under Work</strong>
+				<br>
+				<a href="\Texteditor\skeleton.html">Text Editor: </a>A texteditor just like google docs which have the ability to open a file from your computer,<br> save the file on your laptop, and able to edit the text.
+			</p>
+		</div>
+
+
+		<div id="menu3" class="tab-pane fade jumbotron">
+				<h1><i>Contact Me </i></h1>
+				<p>
+					Tel: (240)-660-6270
+					<br>Email: apoorv@terpmail.umd.edu | mittal.apoorv2012@gmail.com
+					<br><a href="https://www.facebook.com/apoorv.mittal.54" >Facebook</a>
+					<br><a href="https://www.linkedin.com/in/apoorv-mittal-088a21126?trk=nav_responsive_tab_profile_pic">linkedln</a>
+				</p>
+		</div>
+	</div>
 </body>
 </html>
 
