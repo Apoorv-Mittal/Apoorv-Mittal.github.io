@@ -67,7 +67,7 @@ function move(num) {
         if (turn%2==0)
             h6[0].innerHTML=player1+" turn";
         else{
-            
+
             h6[0].innerHTML=player2+" turn";
         }
     }
@@ -82,13 +82,15 @@ function move(num) {
 function checkwinner(symbol) {
     for(var a = 0; a < winningcombo.length; a++) {
         if (content[winningcombo[a][0]] == symbol && content[winningcombo[a][1]] == symbol && content[winningcombo[a][2]] == symbol) {
-            if (symbol=='X')
+            if (symbol=='X') {
                 alert(player1 + " WON!");
+            }
             else if(symbol=='O'){
                 if(player2=="Your")
                     player2="YOU" ;
                 alert(player2+" WON!");
             }
+            turn=0;   // due to one expection i had found showing draw even after win
             playagain();
         }
     }
@@ -97,8 +99,10 @@ function playagain() {
     var y=confirm("New Game?")
     if (y==true)
         location.reload(true);
-    else
+    else {
         alert("Thank You for playing");
+        window.history.back();
+    }
 }
 
 
@@ -110,16 +114,16 @@ function playwithcomp() {
 }
 
 function randommove() {
-        comp = new Array();
-        var l = 0;
-        for (var i = 0; i < filled.length; i++) {
-            if (filled[i] == false) {
-                comp[l] = i;
-                l++;
-            }
+    comp = new Array();
+    var l = 0;
+    for (var i = 0; i < filled.length; i++) {
+        if (filled[i] == false) {
+            comp[l] = i;
+            l++;
         }
-        computerturn=false;
-        move(comp[Math.floor(Math.random() * comp.length)]);
+    }
+    computerturn=false;
+    move(comp[Math.floor(Math.random() * comp.length)]);
 
 }
 
