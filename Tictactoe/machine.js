@@ -6,14 +6,13 @@ var filled=new  Array(),
     turn=1,
     cxt,
     content=new Array(),
-    computerturn=false;
-
-var player1 = "Computer's",player2="Your",
+    computerturn=false,
+    player1 = "Computer's",player2="Your",
     h6=document.getElementsByTagName("h6"),
     comp,
-    see=true;// to check if you are playing with computer or not
+    see=true,// to check if you are playing with computer or not
+    nothing=true;
 window.onload=function () {
-
     for(var i=0;i<9;i++){
         filled[i]=false;
         content[i]='';
@@ -24,7 +23,6 @@ function inform() {
     player2=prompt("Enter player name who will be O","Enter Name");
     see=false;
     h6[0].innerHTML=player2+" turn";
-
 }
 function canclk(num) {
     if (see)
@@ -59,16 +57,18 @@ function move(num) {
         }
         turn++;
         filled[num]=true;
-        checkwinner(content[num]);
-        if (turn==10){
-            alert("The game is a draw");
-            location.reload(true);
-        }
-        if (turn%2==0)
-            h6[0].innerHTML=player1+" turn";
-        else{
+        if (nothing) {
+            checkwinner(content[num]);
+            if (turn == 10) {
+                alert("The game is a draw");
+                location.reload(true);
+            }
+            if (turn % 2 == 0)
+                h6[0].innerHTML = player1 + " turn";
+            else {
 
-            h6[0].innerHTML=player2+" turn";
+                h6[0].innerHTML = player2 + " turn";
+            }
         }
     }
     else {
@@ -84,11 +84,13 @@ function checkwinner(symbol) {
         if (content[winningcombo[a][0]] == symbol && content[winningcombo[a][1]] == symbol && content[winningcombo[a][2]] == symbol) {
             if (symbol=='X') {
                 alert(player1 + " WON!");
+                nothing=false;
             }
             else if(symbol=='O'){
                 if(player2=="Your")
                     player2="YOU" ;
                 alert(player2+" WON!");
+                nothing=false;
             }
             turn=0;   // due to one expection i had found showing draw even after win
             playagain();
