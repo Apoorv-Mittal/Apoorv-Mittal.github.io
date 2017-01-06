@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Question Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MATH TIME!</a>
+            </div>
+            <ul class="nav navbar-nav nav-tabs">
+                <li><a class="active" data-toggle="tab" href="#Addition">Addition</a></li>
+                <li><a data-toggle="tab" href="#Subtract">Subtraction</a></li>
+                <li><a data-toggle="tab" href="#Multi">Multiplication</a></li>
+                <li><a data-toggle="tab" href="#Divi">Division</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="tab-content">
+        <div id="Addition" class="tab-pane fade in active big">
+            <center>
+            <div id="upper"> </div>
+                <div style="font-size: 100px;position: absolute">+</div>
+                <div id="lower"> </div>
+            <input type="text" placeholder="Enter Answer" id="ans">
+            <input type="button" value="Check Answer" onclick="checkans()">
+            </center>
+        </div>
+        <div id="Subtract" class="tab-pane fade">
+            <center>
+                <div id="upper1"> </div>
+                <div style="font-size: 100px;position: absolute">-</div>
+                <div id="lower1"> </div>
+                <input type="text" placeholder="Enter Answer" id="ans1">
+                <input type="button" value="Check Answer" onclick="checkans()">
+            </center>
+        </div>
+        <div id="Multi" class="tab-pane fade">
+            <center>
+                <div id="upper2"> </div>
+                <div style="font-size: 100px;position: absolute">X</div>
+                <div id="lower2"> </div>
+                <input type="text" placeholder="Enter Answer" id="ans2">
+                <input type="button" value="Check Answer" onclick="checkans()">
+            </center>
+        </div>
+        <div id="Divi" class="tab-pane fade">
+            <center>
+                <div id="upper3"> </div>
+                <div style="font-size: 100px;position: absolute">/</div>
+                <div id="lower3"> </div>
+                <input type="text" placeholder="Enter Answer" id="ans3">
+                <input type="button" value="Check Answer" onclick="checkans()">
+            </center>
+        </div>
+    </div>
+    </div>
+
+<script src="machine.js"></script>
+</body>
+</html>
