@@ -12,7 +12,7 @@
 	</head>
 <style>
 	.navbar-custom {
-    	background-color: #FFFFFF;
+    	background-color: transparent;
     	border: 0 !important;
 	}
 	h1{
@@ -22,12 +22,20 @@
 		text-align: center;
 	}
 	body{
-    padding-top: 70px;
     text-align: left;
 	}
+	body{height:100%;
+   width:100%;
+   background-image:url(http://www.freebiesgallery.com/wp-content/uploads/2013/08/light-blue-background.jpg);/*your background image*/  
+   background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/  
+   /*css hack for ie*/     
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.freebiesgallery.com/wp-content/uploads/2013/08/light-blue-background.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.freebiesgallery.com/wp-content/uploads/2013/08/light-blue-background.jpg',sizingMethod='scale')";
+	}
 </style>
-<body >
-	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<body>
+	<nav class="navbar navbar-default navbar-custom  navbar-fixed-top">
 		<div class="container-fluid">
 			
 			<ul class="nav navbar-nav navbar-right">
@@ -51,8 +59,8 @@
 
 
 
-	<div class="tab-content container">
-		<div id="home" class="tab-pane fade in active jumbotron">
+	<div class="tab-content container" >
+		<div id="home" class="tab-pane fade in active jumbotron" style="background-color: transparent;"> 
 			<h1>Who is Apoorv?</h1><br><br>
 				
 					<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/1937018_953312141402602_4557654103894548838_n.jpg?oh=533086479c4ebd0ea77b89368138fd17&oe=58ED8563" class="img-rounded" width="400" height="250" alt="IT IS ME!!!" style="float: right;">
@@ -87,8 +95,12 @@
 			<br>
 		</div>
 
-		<div id="menu2" class="tab-pane fade jumbotron">
+		<div id="menu2" class="tab-pane fade jumbotron" style="background-color: transparent;">
 			<h1><i>Projects</i></h1>
+			<hr>
+			<br>
+			<br>
+			<br>
 			<br>
 			<p><strong>Projects Completed</strong>
 				<br>
@@ -112,8 +124,12 @@
 			</p>
 		</div>
 
-		<div id="menu3" class="tab-pane fade jumbotron">
+		<div id="menu3" class="tab-pane fade jumbotron" style="background-color: transparent;">
 		<h1><i>Skills and Experience</i></h1>
+				<hr>
+				<br>
+				<br>
+				<br>
 			<p>
 					<strong>Technical Skills</strong>
 					<br>Languages: Java, HTML, CSS, Javascript
@@ -132,8 +148,12 @@
 				</p>
 		</div>
 
-		<div id="menu4" class="tab-pane fade jumbotron">
+		<div id="menu4" class="tab-pane fade jumbotron" style="background-color: transparent;">
 				<h1><i>Contact Me </i></h1>
+				<hr>
+				<br>
+				<br>
+				<br>
 				<p>
 					Tel: (240)-660-6270
 					<br>Email: <a href="mailto:apoorv@terpmail.umd.edu">apoorv@terpmail.umd.edu </a>| <a href="mailto:mittal.apoorv2012@gmail.com">mittal.apoorv2012@gmail.com</a>
