@@ -1,32 +1,28 @@
 .header{
 		position: fixed;
 		top: 0;
-    	left: 0;
-    	bottom: 0;
-    	width: 135px;
+    left: 0;
+    bottom: 0;
+    width: 135px;
 		background-color: white;
 		color: white;
 		font-size: 20px;
 }
 ul{
 		list-style: none;
-    	margin: 20px ;
-   		padding: 0 20px 0 0;
-   		text-align: right !important;
+    margin: 10px ;
+   	padding: 0 10px 0 0;
+   	text-align: center !important;
 }
-li {	
-    	margin-bottom: 10px; 
-    	text-align: right;
-
+li {
+    	margin-bottom: 10px;
+    	text-align: center !important;
 }
 .away{
 	margin-left: 135px !important;
 	margin-top: 0;
 }
-.navbar-custom {
-    	background-color: transparent;
-    	border: 0 !important;
-}
+
 h1{
 	font-family:'Cormorant Upright', serif;
 	font-size: 100px !important;
@@ -37,13 +33,12 @@ h1{
 	text-align: center;
 	margin-top: 0;
 	padding-top: 15px;
+	width: 100%;
 }
 body{
 	text-align: left;
 	height:100%;
  	width:100%;
-
-    
 }
 a:link{
 	color: rgb(192,192,192);
@@ -57,4 +52,75 @@ a:active {
 }
 a:visited {
    color: rgb(192,192,192);
+}
+img{
+	height: auto;
+	max-width: 100%;
+}
+.change{
+	font-size: 30px !important;
+}
+.logo{
+	width:135px ;
+	height:127px;
+}
+.thenav{
+			margin-left: 30%;
+}
+@media (max-width:850px) {
+	.header{
+			position: relative;
+			background-color:white;
+			color: white;
+			font-size: 20px;
+			width: 100%;
+	}
+	ul{
+			list-style: none;
+	   	padding: 0 20px 0 0;
+	}
+	li {
+	    margin-bottom: 10px;
+			border-bottom:1px solid dimgrey;
+	}
+	.away{
+		margin-left:0px !important;
+		margin-top: 0;
+	}
+	h1{
+		font-size: 40px !important;
+		height: 100px;
+		text-align: center;
+		margin-top: 0;
+		padding-top: 10px;
+		width: 100%;
+	}
+	.change{
+		font-size: 20px !important;
+	}
+	.logo{
+		width: auto;
+		height: 186px;
+		float: left;
+	}
+	.thenav{
+		float: right;
+		margin-left: auto;
+	}
+
+}
+@media (max-width:347px){
+	.logo{
+		width:auto;
+		height: 171px;
+		float: left;
+	}
+	ul{
+			list-style: none;
+	   	padding: 0 5px 0 0;
+	   	text-align: center !important;
+	}
+	li {
+	    margin-bottom: 5px;
+	}
 }
