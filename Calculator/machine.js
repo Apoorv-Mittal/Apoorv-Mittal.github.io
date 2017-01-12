@@ -1,5 +1,5 @@
 var button = document.getElementsByTagName("input");
-	for(var i=0;i<button.length;i++){
+	for(var i=1;i<button.length;i++){
   		button[i].addEventListener("click", function() {
     	console.log("Button clicked.");
     	if(this.value=="="){
