@@ -40,17 +40,17 @@ body{
  	width:100%;
 }
 a:link{
-	color: rgb(192,192,192);
+	color: #999999;
 	text-decoration: none;
 }
 a:hover{
-	color: rgb(105,105,105);
+	color: #595959;
 }
 a:active {
-    color: rgb(105,105,105);
+    color: #595959;
 }
 a:visited {
-   color: rgb(192,192,192);
+   color: #999999;
 }
 img{
 	height: auto;
