@@ -17,21 +17,28 @@
                 <li><a  href="multi.html">Multiplication</a></li>
                 <li><a  href="divi.html">Division</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
-            </ul>
     </nav>
-    <div class="tab-content container">
-        <div id="Addition" class="tab-pane fade in active big jumbotron">
+    <div class="container">
+        <div class="jumbotron">
             <center>
             <div id="upper"> </div>
-                <div style="font-size: 100px;position: absolute">/</div>
-                <div id="lower"> </div>
+            <div style="font-size: 100px;position: absolute">/</div>
+            <div id="lower"> </div>
             <input type="text" placeholder="Enter Answer" id="ans">
             <input type="button" value="Check Answer" onclick="checkans(4)">
             </center>
         </div>
     </div>
+    <div class="container" id="set">
+        <div class="jumbotron">
+            <center>
+              <div style="font-size: 50px;">Digits used for </div><br/>
+              <div style="font-size: 25px;">Division : <input id="add" type="text" value="3"></div>
+              <input type="button" value="Set" onclick="set()"> <br/>
+            </center>
+        </div>
+    </div>
+
 <script src="machine.js"></script>
 </body>
 </html>

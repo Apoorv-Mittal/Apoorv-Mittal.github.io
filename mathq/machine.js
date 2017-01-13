@@ -8,17 +8,21 @@ var up,
     result,
     digit=3;
 window.onload=function () {
-    up=gen(digit);
-    lo=gen(digit);
-    if(up<lo){
-      var temp=up;
-      up=lo;
-      lo=temp;
-    }
-    eleup.innerHTML=up;
-    elelo.innerHTML=lo;
-    eleup.style.fontSize = "100px";
-    elelo.style.fontSize = "100px";
+  if(window.localStorage&&localStorage.Number_digit){
+    digit=localStorage.Number_digit;
+  }
+  document.getElementById("add").value=digit;
+  up=gen(digit);
+  lo=gen(digit);
+  if(up<lo){
+    var temp=up;
+    up=lo;
+    lo=temp;
+  }
+  eleup.innerHTML=up;
+  elelo.innerHTML=lo;
+  eleup.style.fontSize = "100px";
+  elelo.style.fontSize = "100px";
 }
 function gen(ele) {
     return Math.floor(Math.random()*(Math.pow(10,ele)));
@@ -39,4 +43,11 @@ function checkans(sign) {
     else
         alert("you are wrong and the correct answer is: "+result);
     location.reload(true);
+}
+function set(){
+  var s=document.getElementById("add");
+  if(window.localStorage){
+    localStorage.Number_digit=parseInt(s.value);
+  }
+  location.reload();
 }
