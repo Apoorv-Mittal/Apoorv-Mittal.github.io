@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title>My To-Do List</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="Header">
         <h1>My To-Do List</h1>
         <input type="text" id="thing" class="inarea" placeholder="What do you want to add to your list">
-        <button class="btn"onclick="make()">Add</button>
+        <span class="btn" onclick="make()">Add</span>
     </div>
-    <div id="content"></div>
+    <div style="clear: both"></div>
+    <br>
+    <ul id="content"></ul>
 <script src="machine.js"></script>
 </body>
 </html>
