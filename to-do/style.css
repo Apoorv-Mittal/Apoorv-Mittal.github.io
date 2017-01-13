@@ -1,0 +1,25 @@
+body{
+    background: #ffff1a;
+}
+.Header{
+    text-align: center;
+
+    font-size: 30px;
+}
+.inarea{
+    width:80%;
+    height: 50px;
+    font-size: xx-large;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    font-size: xx-large;
+    background-color: #1a75ff;
+}
+p{
+    background-color: #a6ff4d;
+    text-align: center;
+    padding: 10px;
+    font-size: xx-large;
+}
