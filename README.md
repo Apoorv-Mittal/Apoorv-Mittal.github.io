@@ -1,2 +1,2 @@
 # MentalMittal.github.io
-Personal Website
+Personal Website containing all my projects.
