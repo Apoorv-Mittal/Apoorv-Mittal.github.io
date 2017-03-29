@@ -1,15 +1,16 @@
 .header{
-		position: fixed;
-		top: 0;
+    position: fixed;
+	top: 0;
     left: 0;
     bottom: 0;
     width: 135px;
-		background-color: white;
-		font-size: 20px;
+	background-color: white;
+	font-size: 20px;
 	display:none;
+
 }
 ul{
-		list-style: none;
+    list-style: none;
     margin: 10px ;
    	padding: 0 20px 0 0;
 }
@@ -17,11 +18,17 @@ li {
     	margin-bottom: 10px;
 }
 .away{
-	margin-left: 135px !important;
+	margin-left: 130px !important;
 	margin-top: 0;
 	display:none;
 }
-
+.jumbotron {
+    /*background: rgb(200, 54, 54); !* This is for ie8 and below *!*/
+    /*background: rgba(200, 54, 54, 0.5);*/
+    background: rgba(255,255,255,0.3);
+    margin-top: 10px;
+    width: 90%;
+}
 h1{
 	font-family:'Cormorant Upright', serif;
 	font-size: 100px !important;
@@ -32,13 +39,14 @@ h1{
 	text-align: center;
 	margin-top: 0;
 	padding-top: 15px;
-	width: 100%;
+	width: 95%;
 	border-radius:20px
 }
 body{
 	text-align: left;
 	height:100%;
  	width:100%;
+	background-color: orange;
 }
 img{
 	border-radius: 20px;
@@ -46,14 +54,14 @@ img{
 	width: 400px;
 }
 a:link{
-	color: #999999;
+	color: #008000;
 	text-decoration: none;
 }
 a:hover{
 	color: #595959;
 }
 a:active {
-    color: #595959;
+    color: #008000;
 }
 a:visited {
    color: #999999;
@@ -70,7 +78,8 @@ img{
 	height:127px;
 }
 .thenav{
-			margin-left: 30%;
+    margin-left: 30%;
+
 }
 @media (max-width:850px) {
 	.header{
