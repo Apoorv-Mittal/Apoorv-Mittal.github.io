@@ -9,6 +9,9 @@ h1,h6{
     -webkit-animation:h1Animation 5s;
     margin-bottom: 5px;
 }
+h6{
+    margin-top: 10px;
+}
 canvas{
     height:100px;
     width: 100px;
