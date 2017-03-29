@@ -7,6 +7,7 @@ h1,h6{
     font-family: "Latin Modern Math";
     position: relative;
     -webkit-animation:h1Animation 5s;
+    margin-bottom: 5px;
 }
 canvas{
     height:100px;
