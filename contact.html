@@ -36,11 +36,11 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
-    var images = ['c817012.jpg','588d7ab.jpg', '64fac45.jpg'];
+    var images = ['c817012.jpg','588d7ab.jpg', '64fac45.jpg','25a2dc8.jpg','605cfac.jpg'];
     $ (document).ready(function () {
         $( "div" ).fadeIn( 2000 );
         $( "nav" ).slideDown( 2000 );
-        $('.page-bg').css({'background-image': 'url(' + images[Math.floor(Math.random() *      images.length)] + ')'});
+        $('.page-bg').css({'background-image': 'url(images/' + images[Math.floor(Math.random() *      images.length)] + ')'});
     });
 </script>
 </body>
