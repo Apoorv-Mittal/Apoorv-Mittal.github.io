@@ -128,7 +128,7 @@ img{
 		margin-left: auto;
 	}
 	a:link{
-		color: #222222;
+		color: black;
 	}
 	a:visited {
 		color: black;
@@ -154,5 +154,15 @@ img{
 	}
 	li {
 	    margin-bottom: 5px;
+	}
+	a:link{
+		color: black;
+	}
+	a:visited {
+		color: black;
+	}
+	a:hover{
+		color: #01b239;
+		font-size: 20px;
 	}
 }
