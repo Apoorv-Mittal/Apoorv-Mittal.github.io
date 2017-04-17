@@ -63,7 +63,7 @@ img{
 	width: 400px;
 }
 a:link{
-	color: white;
+	color:  #F0FFFF ;
 	text-decoration: none;
 }
 a:hover{
@@ -71,10 +71,10 @@ a:hover{
 	font-size: 28px;
 }
 a:active {
-    color: #008000;
+    color:  #F0FFFF ;
 }
 a:visited {
-	color: white;
+	color:  #F0FFFF ;
 }
 img{
 	height: auto;
@@ -127,13 +127,13 @@ img{
 		float: right;
 		margin-left: auto;
 	}
-	a:link{
+    a:link.b{
 		color: black;
 	}
-	a:visited {
+    a:visited.b {
 		color: black;
 	}
-	a:hover{
+    a:hover{
 		color: #01b239;
 		font-size: 20px;
 	}
@@ -155,13 +155,13 @@ img{
 	li {
 	    margin-bottom: 5px;
 	}
-	a:link{
+	a:link.b{
 		color: black;
 	}
-	a:visited {
+    a:visited.b {
 		color: black;
 	}
-	a:hover{
+    a:hover{
 		color: #01b239;
 		font-size: 20px;
 	}
