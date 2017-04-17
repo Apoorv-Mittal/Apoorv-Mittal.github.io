@@ -22,8 +22,9 @@ li {
     background: rgb(0, 0, 0);  /*This is for ie8 and below */
     background: rgba(0,0,0,0.2);
     margin-top: 12px;
+    margin-right: 12px;
     height: 100%;
-    width: 90%;
+    width: auto;
 }
 .change{
 	font-size: 225% !important;
@@ -55,9 +56,6 @@ h1{
 	left: 0;
 	z-index: -1;
 	display: block;
-}
-#abt{
-	background-image: url("c817012.jpg");
 }
 img{
 	border-radius: 20px;
@@ -108,6 +106,7 @@ img{
 	.away{
 		margin-left:0px !important;
 		margin-top: 0;
+        margin-right: 0;
 	}
 	h1{
 		font-size: 40px !important;
