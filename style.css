@@ -88,7 +88,7 @@ img{
 	.header{
 		position: relative;
 		background-color:white;
-		color: white;
+		color: black;
 		font-size: 20px;
         width: 100%;
 	}
@@ -101,7 +101,7 @@ img{
 	}
 	li {
 	    margin-bottom: 10px;
-			border-bottom:1px solid dimgrey;
+		border-bottom:1px solid dimgrey;
 	}
 	.away{
 		margin-left:0px !important;
@@ -127,16 +127,28 @@ img{
 		float: right;
 		margin-left: auto;
 	}
-
+	a:link{
+		color: #222222;
+	}
+	a:visited {
+		color: black;
+	}
+	a:hover{
+		color: #01b239;
+		font-size: 20px;
+	}
 }
 @media (max-width:347px){
+	.header{
+		color: #000;
+	}
 	.logo{
 		width:auto;
 		height: 171px;
 		float: left;
 	}
 	ul{
-			list-style: none;
+		list-style: none;
 	   	padding: 0 5px 0 0;
 	   	text-align: center !important;
 	}
