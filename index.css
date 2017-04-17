@@ -1,0 +1,170 @@
+.header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 135px;
+	background: rgba(255,255,255,0.3);
+	font-size: 25px;
+	display:none;
+}
+ul{
+    list-style: none;
+    margin: 10% ;
+   	padding: 250px 0 0 0;
+
+}
+li {
+	margin-bottom: 10px;
+}
+.away{
+	margin-left: 150px !important;
+	display:none;
+    background: rgb(0, 0, 0);  /*This is for ie8 and below */
+    background: rgba(0,0,0,0.2);
+    margin-top: 12px;
+    height: 100%;
+    width: 90%;
+}
+.change{
+	font-size: 225% !important;
+    color: white;
+}
+h1{
+	font-family:'Cormorant Upright', serif;
+	font-size: 100px !important;
+	color: white !important;
+	text-align: center;
+	background-color: #262626;
+	height: 150px;
+	margin-top: 0;
+	padding-top: 15px;
+	width: 95%;
+	border-radius:20px
+}
+.page-bg {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	position: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	display: block;
+}
+#abt{
+	background-image: url("c817012.jpg");
+}
+img{
+	border-radius: 20px;
+	float: right;
+	width: 400px;
+}
+a:link{
+	color:  #F0FFFF ;
+	text-decoration: none;
+}
+a:hover{
+	color: #01b239;
+	font-size: 28px;
+}
+a:active {
+    color:  #F0FFFF ;
+}
+a:visited {
+	color:  #F0FFFF ;
+}
+img{
+	height: auto;
+	max-width: 100%;
+}
+.logo{
+	width:135px ;
+	height:127px;
+}
+@media (max-width:800px) {
+	.header{
+		position: relative;
+		background-color:white;
+		color: black;
+		font-size: 20px;
+        width: 100%;
+	}
+	ul{
+        list-style: none;
+	   	padding: 0 20px 0 0;
+	}
+	ul:last-child{
+		display: none;
+	}
+	li {
+	    margin-bottom: 10px;
+		border-bottom:1px solid dimgrey;
+	}
+	.away{
+		margin-left:0px !important;
+		margin-top: 0;
+	}
+	h1{
+		font-size: 40px !important;
+		height: 100px;
+		text-align: center;
+		margin-top: 0;
+		padding-top: 10px;
+		width: 100%;
+	}
+	.change{
+		font-size: 20px !important;
+	}
+	.logo{
+		width: auto;
+		height: 186px;
+		float: left;
+	}
+	.thenav{
+		float: right;
+		margin-left: auto;
+	}
+    a:link.b{
+		color: black;
+	}
+    a:visited.b {
+		color: black;
+	}
+    a:hover{
+		color: #01b239;
+		font-size: 20px;
+	}
+}
+@media (max-width:347px){
+	.header{
+		color: #000;
+	}
+	.logo{
+		width:auto;
+		height: 171px;
+		float: left;
+	}
+	ul{
+		list-style: none;
+	   	padding: 0 5px 0 0;
+	   	text-align: center !important;
+	}
+	li {
+	    margin-bottom: 5px;
+	}
+	a:link.b{
+		color: black;
+	}
+    a:visited.b {
+		color: black;
+	}
+    a:hover{
+		color: #01b239;
+		font-size: 20px;
+	}
+}
