@@ -1,6 +1,9 @@
 {
   "name": "Chatty",
   "version": "0.0.1",
-  "description": "my first socket.io app",
-  "dependencies": {}
+  "description": "Minimalist multiroom chat server",
+  "dependencies": {
+    "socket.io": "~2.0.2",
+    "mime": "~1.3.6"
+  }
 }
