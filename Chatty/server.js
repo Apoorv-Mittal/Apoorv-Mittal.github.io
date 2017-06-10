@@ -6,8 +6,7 @@ var fs= require('fs');
 var path=require('path');//provides filesystem ppath-related functionality
 var mime= require('mime');//derive a mime typed based on a filename extension
 var cache={};//contents of cache files are stored
-var chatServer= require('./lib/chat_server');//loads socket-io to handle server side functionality
-chatServer.listen(server);//starts the server side functionality
+
 
 //error helper function
 function send404(response) {
@@ -75,3 +74,6 @@ var server= http.createServer(function (request, response) {
 server.listen(3000,function () {
     console.log("server listening on port 3000.")
 })
+
+var chatServer= require('./lib/chat_server');//loads socket-io to handle server side functionality
+chatServer.listen(server);//starts the server side functionality

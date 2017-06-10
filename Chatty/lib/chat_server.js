@@ -56,7 +56,7 @@ function joinRoom(socket, room) {
     socket.broadcast.to(room).emit('message', {
         text:nickName[socket.id]+' has joined '+ room +'.'
     });
-    var usersInRoom= io.sockets.client(room);
+    var usersInRoom= io.sockets.clients(room);
     //if other users exists summarize who they are
     if ( usersInRoom.length>1){
         var usersInRoomSummary = 'USer currently in '+room+': ';
