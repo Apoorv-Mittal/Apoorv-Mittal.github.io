@@ -59,7 +59,7 @@ function joinRoom(socket, room) {
     var usersInRoom= io.sockets.clients(room);
     //if other users exists summarize who they are
     if ( usersInRoom.length>1){
-        var usersInRoomSummary = 'USer currently in '+room+': ';
+        var usersInRoomSummary = 'User currently in '+room+': ';
         for (var index in usersInRoom){
             var userSocketId = usersInRoom[index].id;
             if( userSocketId != socket.id){
