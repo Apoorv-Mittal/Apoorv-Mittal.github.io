@@ -31,7 +31,7 @@ function processUserInput(chatApp, socket) {
 var socket = io.connect();
 
 $(document).ready(function () {
-    var chatApp= new chat(socket);
+    var chatApp= new Chat(socket);
 
     //display results of name change attempt
     socket.on('nameResult', function (result) {
