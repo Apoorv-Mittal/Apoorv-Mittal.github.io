@@ -45,3 +45,94 @@ function assignGuestName(socket, guestNumber, nickName, namesUsed) {
     namesUsed.push(name);
     return guestNumber+1;//increament counter used to generate unique guest names
 }
+
+//joining rooms
+function joinRoom(socket, room) {
+    socket.join(room);//make user join the room
+    //user is now in this room
+    currentRoom[socket.id] = room;
+    socket.emit('joinResult', {room:room});//let user know they are in the room
+    //leet other user know who has joined
+    socket.broadcast.to(room).emit('message', {
+        text:nickName[socket.id]+' has joined '+ room +'.'
+    });
+    var usersInRoom= io.sockets.client(room);
+    //if other users exists summarize who they are
+    if ( usersInRoom.length>1){
+        var usersInRoomSummary = 'USer currently in '+room+': ';
+        for (var index in usersInRoom){
+            var userSocketId = usersInRoom[index].id;
+            if( userSocketId != socket.id){
+                if (index>0){
+                    usersInRoomSummary+=', ';
+                }
+                usersInRoomSummary+= nickName[userSocketId];
+            }
+        }
+        usersInRoomSummary+='.';
+        socket.emit('message',{text: usersInRoomSummary}); //send the summary of the room to the user
+    }
+}
+
+//handling name change requests
+function handleNameChangeAttempts(socket, nickName, namesUsed) {
+    //ad listner for nameAttempt event
+    socket.on('nameAttempt', function (name) {
+        if(name.indexOf('Guest')==0){
+            socket.emit('nameResult',{
+                success:false,
+                message:'Names cannot begin with "Guest".'
+            });
+        }
+        else{
+            //if name isnt already registered, register it
+            if (namesUsed.indexOf(name)==-1){
+                var previousName =nickName[socket.id];
+                var preciousNameIndex= namesUsed.indexOf(previousName);
+                namesUsed.push(name);
+                nickName[socket.id]= name;
+                delete namesUsed[preciousNameIndex];//remove previous name to make it available for other clients
+                socket.emit('nameResult', {
+                    success:true,
+                    name:name
+                });
+                socket.broadcast.to(currentRoom[socket.id].emit('message',{
+                    text: previousName+' is now known as '+ name+'.'
+                }));
+            }
+            //sending error if the name is already taken
+            else{
+                socket.emit('nameResult',{
+                    success:false,
+                    message:'That name is already Taken.'
+                });
+            }
+        }
+    });
+}
+
+//sending chat message
+function handleMessageBroadcasting(socket) {
+    socket.on('message', function (message) {
+        socket.broadcast.to(message.room).emit('message',{
+            text:nickName[socket.id]+ ': '+message.text
+        });
+    });
+}
+
+//create rooms
+function handleRoomJoining(socket) {
+    socket.on('join', function (room) {
+        socket.leave(currentRoom[socket.id]);
+        joinRoom(socket, room.newRoom);
+    });
+}
+
+//handling user disconnections
+function handleClientDisconnection(socket) {
+    socket.on('disconnect', function () {
+        var nameIndex = namesUsed.indexOf(nickName[socket.id]);
+        delete namesUsed[nameIndex];
+        delete nickName[socket.id];
+    });
+}
