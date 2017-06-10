@@ -19,7 +19,7 @@ exports.listen = function (server) {
         joinRoom(socket, 'Lobby');//place user in lobby when they connect
 
         //handle messages, names changes and room joing requests
-        handleMessageBroadcast(socket, nickName);
+        handleMessageBroadcasting(socket, nickName);
         handleNameChangeAttempts(socket, nickName, namesUsed);
         handleRoomJoining(socket);
 
@@ -29,7 +29,7 @@ exports.listen = function (server) {
         });
 
         //define cleanup logic when user disconnects
-        handleClientDisconnect(socket, nickName, namesUsed);
+        handleClientDisconnection(socket, nickName, namesUsed);
     });
 };
 
