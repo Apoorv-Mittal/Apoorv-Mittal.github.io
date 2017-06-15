@@ -87,6 +87,9 @@ a:visited {
 li a:focus {
    color: #01b239;
 }
+div a:link{
+	text-decoration: underline;
+}
 @media (max-width:800px) {
 	.header{
 		position: relative;
