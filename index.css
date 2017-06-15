@@ -18,6 +18,11 @@ ul{
 	width:120px ;
 	height:120px;
 }
+.logo1{
+	display: none;
+	width: 135px;
+	height: 127px;
+}
 li {
 	margin-bottom: 10px;
 }
@@ -124,10 +129,14 @@ div a:link{
 	.change{
 		font-size: 20px !important;
 	}
-	.logo{
+	.logo1{
+		display: block;
 		width: auto;
 		height: 186px;
 		float: left;
+	}
+	.logo{
+		display: none;
 	}
 	.dp{
 		width: inherit;
@@ -152,7 +161,7 @@ div a:link{
 	.header{
 		color: #000;
 	}
-	.logo{
+	.logo1{
 		width:auto;
 		height: 171px;
 		float: left;
