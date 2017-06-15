@@ -58,10 +58,10 @@ h1{
 	z-index: -1;
 	display: block;
 }
-img{
-	border-radius: 20px;
+.dp{
 	float: right;
 	width: 400px;
+	border-radius: 200%;
 }
 a:link{
 	color:  #F0FFFF ;
