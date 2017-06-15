@@ -77,10 +77,6 @@ a:active {
 a:visited {
 	color:  #F0FFFF ;
 }
-img{
-	height: auto;
-	max-width: 100%;
-}
 .logo{
 	width:135px ;
 	height:127px;
