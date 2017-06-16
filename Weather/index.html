@@ -24,6 +24,7 @@
     </style>
 </head>
 <body>
+<button onclick="getLocation()">Refresh</button>
 <div class="icons">
     <p id="Temp"></p><br>
     <span id="summary"></span><canvas id="symbol" width="125" height="125"></canvas><br>
@@ -34,15 +35,16 @@
 <script src="skycons.js"></script>
 <script>
 
-    $(document).ready(function () {
-        getLocation();
-    })
+//    $(document).ready(function () {
+//        getLocation();
+//    })
 
     var x = document.getElementById("Temp");
 
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
+            console.log("hy");
         } else {
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
