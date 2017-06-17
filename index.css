@@ -7,7 +7,7 @@
 	left:0;
     width: 120px;
 	background: rgba(60,63,65,1.0);
-	font-size: 22px;
+	font-size: 20px;
 	display:none;
 }
 ul{
@@ -17,9 +17,6 @@ ul{
 }
 li {
 	margin-bottom: 10px;
-}
-li:last-child{
-	font-size: 20px;
 }
 .logo{
 	width:120px ;
@@ -36,18 +33,26 @@ li:last-child{
 	display:none;
     background: rgb(0, 0, 0);  /*This is for ie8 and below */
     background: rgba(0,0,0,0.0);
-    margin-top: 12px;
-    height: 100%;
-    width: 90%;
+    width: 92%;
+	overflow:hidden;
+	color:white;
 }
-.away:nth-child(even){
+.away:nth-child(odd){
     background-image: url("resources/background-dark-diagonal-lines.png");
     background-size: 100%;
     background-color: rgba(0,0,0,0.2);
+
+}
+/*div:nth-child(even){*/
+	/*background-color: white;*/
+	/*background-size: 100%;*/
+/*}*/
+div{
+	overflow: auto;
 }
 .change{
 	font-size: 225% !important;
-    color: white;
+
 }
 h1{
 	font-family:'Cormorant Upright', serif;
