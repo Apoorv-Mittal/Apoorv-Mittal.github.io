@@ -12,11 +12,13 @@
 }
 ul{
     list-style: none;
-   	padding:250px 20px 0 0;
-	text-align: right;
-}
-li {
-	margin-bottom: 10px;
+    text-align: right;
+    padding: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+    height: 30%;
 }
 .logo{
 	width:120px ;
@@ -33,16 +35,12 @@ li {
 	overflow:hidden;
 	color:white;
 }
-.away:nth-child(odd){
+.away{
     background-image: url("resources/background-dark-diagonal-lines.png");
     background-size: 100%;
     background-color: rgba(0,0,0,0.2);
 
 }
-/*div:nth-child(even){*/
-	/*background-color: white;*/
-	/*background-size: 100%;*/
-/*}*/
 div{
 	overflow: auto;
 }
