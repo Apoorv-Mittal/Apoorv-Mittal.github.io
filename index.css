@@ -136,7 +136,7 @@ div a:link{
 	}
 	.logo{
 		display: block;
-		width: auto;
+		width: 230px;
 		height: 186px;
 		float: left;
 		margin-top: 20px;
@@ -165,8 +165,8 @@ div a:link{
 		color: #000;
 	}
 	.logo{
-		width:auto;
-		height: 150px;
+		width:200px;
+		height: auto;
 		float: left;
 		margin-top:30px;
 	}
