@@ -23,7 +23,7 @@ window.onload=function () {
   elelo.innerHTML=lo;
   eleup.style.fontSize = "100px";
   elelo.style.fontSize = "100px";
-}
+};
 function gen(ele) {
     return Math.floor(Math.random()*(Math.pow(10,ele)));
 }

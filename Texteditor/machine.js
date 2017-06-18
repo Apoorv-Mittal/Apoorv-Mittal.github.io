@@ -8,7 +8,7 @@ document.getElementById("file1").onchange=function () {
     filereader.onload=function (e) {
         var text=e.target.result;
         document.getElementById("text_input").value=text;
-    }
+    };
     filereader.readAsText(file, "UTF-8");
 };
 //to save a file

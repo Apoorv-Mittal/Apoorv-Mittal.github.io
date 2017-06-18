@@ -8,7 +8,7 @@ function make() {
     var text=document.createTextNode(c.value);
     node.appendChild(text);
     if(c.value=='')
-        alert("Please Enter Some Task")
+        alert("Please Enter Some Task");
     else
         document.getElementById("content").appendChild(node);
     c.value="";

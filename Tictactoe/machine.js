@@ -1,11 +1,11 @@
 /**
  * Created by apoorvmittal on 1/3/17.
  */
-var filled=new  Array(),
+var filled=[],
     winningcombo=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]],
     turn=1,
     cxt,
-    content=new Array(),
+    content=[],
     computerturn=false,
     player1 = "Computer's",player2="Your",
     h6=document.getElementsByTagName("h6"),
@@ -17,7 +17,7 @@ window.onload=function () {
         filled[i]=false;
         content[i]='';
     }
-}
+};
 function inform() {
     player1=prompt("Enter player name who will be X","Enter Name");
     player2=prompt("Enter player name who will be O","Enter Name");
@@ -98,7 +98,7 @@ function checkwinner(symbol) {
     }
 }
 function playagain() {
-    var y=confirm("New Game?")
+    var y=confirm("New Game?");
     if (y==true)
         location.reload(true);
     else {
@@ -116,7 +116,7 @@ function playwithcomp() {
 }
 
 function randommove() {
-    comp = new Array();
+    comp = [];
     var l = 0;
     for (var i = 0; i < filled.length; i++) {
         if (filled[i] == false) {
