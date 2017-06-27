@@ -111,9 +111,12 @@ div a:link {
     color: white;
     text-decoration: none;
 }
-
+.b a:visited{
+    color: #F0FFFF;
+}
 a:hover {
     color: #01b239;
+    text-decoration: none;
 }
 
 a:active {
@@ -121,16 +124,13 @@ a:active {
 }
 
 a:visited {
-    color: darkgreen;
+    color: #F0FFFF;
 }
 
 li a:focus {
     color: #01b239;
 }
 
-div a:link {
-    text-decoration: underline;
-}
 
 .footer {
     padding: 30pt 0 30pt 120pt;
