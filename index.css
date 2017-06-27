@@ -1,16 +1,27 @@
-@import url(http://fonts.googleapis.com/css?family=Cormorant+Upright);
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
-.header{
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+.header {
     position: fixed;
     top: 0;
     bottom: 0;
-    left:0;
+    left: 0;
     width: 120px;
-    background: rgba(60,63,65,1.0);
+    background: rgba(60, 63, 65, 1.0);
     font-size: 20px;
-    display:none;
+    display: none;
 }
-ul{
+
+ul {
     list-style: none;
     text-align: right;
     padding: 0;
@@ -21,171 +32,218 @@ ul{
     height: 30%;
 }
 
-.logo{
-    width:120px ;
-    height:120px;
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 120px;
+}
+
+/* First image (Home)*/
+.bgimg-1 {
+    background-image: url('assets/Itsme.jpg');
+    min-height: 100%;
+}
+
+/* Second image  (Projects)*/
+.bgimg-2 {
+    background-image: url("assets/bgImages/7c5b501.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Experience) */
+.bgimg-3 {
+    background-image: url("assets/bgImages/9e0531d.jpg");
+    min-height: 400px;
+}
+
+.display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.first{
+     left:70%;
+ }
+
+.display-container {
+    position: relative;
+    opacity: 0.9;
+    color: #fff !important;
+    letter-spacing: 10px;
+    font-size: 36px !important
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
     margin-top: 20px;
     background-size: contain;
 }
-.away{
-    margin-left: 120px !important;
-    display:none;
-    background: rgb(0, 0, 0);  /*This is for ie8 and below */
-    background: rgba(0,0,0,0.0);
-    width: 92%;
-    overflow:hidden;
-    color:white;
-}
-.away{
-    background-image: url("resources/background-dark-diagonal-lines.png");
-    background-size: 100%;
-    background-color: rgba(0,0,0,0.2);
 
+.away {
+    margin-left: 120px !important;
+    display: none;
+    background: rgb(0, 0, 0); /*This is for ie8 and below */
+    background: rgba(0, 0, 0, 0.0);
+    width: 92%;
+    overflow: hidden;
+    color: black;
 }
-div{
+
+div {
     overflow: auto;
 }
-.change{
+
+.change {
     font-size: 225% !important;
 
 }
-h1{
-    font-family:'Cormorant Upright', serif;
-    font-size: 100px !important;
-    color: white !important;
-    text-align: center;
-    background-color: #262626;
-    height: 150px;
-    margin-top: 0;
-    padding-top: 15px;
-    width: 95%;
-    border-radius:20px
-}
-.page-bg {
-    -webkit-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-    position: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-}
-.dp{
-    float: right;
-    border-radius: 100%;
-    width: 400px;
-    height: auto;
-}
-a:link{
-    color:  #F0FFFF ;
+div a:link {
+    color: darkgreen;
     text-decoration: none;
 }
-a:hover{
+.b{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
     color: #01b239;
 }
+
 a:active {
-    color:  #F0FFFF ;
+    color: #F0FFFF;
 }
+
 a:visited {
-    color:  #F0FFFF ;
+    color: #F0FFFF;
 }
+
 li a:focus {
     color: #01b239;
 }
-div a:link{
+
+div a:link {
     text-decoration: underline;
 }
-@media (max-width:800px) {
-    .header{
+
+.footer {
+    padding: 30pt 0 30pt 120pt;
+    background-image: url("assets/bgImages/9e0531d.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .header {
         position: relative;
-        background-color:white;
+        background-color: white;
         color: black;
         font-size: 20px;
         width: 100%;
     }
-    ul{
+
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        margin-left: 0 !important;
+    }
+
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+
+    .first {
+        left: 50%;
+        top: 80%;
+    }
+    ul {
         list-style: none;
         padding: 0 20px 0 0;
     }
-    ul:last-child{
+
+    ul:last-child {
         display: none;
     }
+
     li {
         margin-bottom: 10px;
-        border-bottom:1px solid dimgrey;
+        border-bottom: 1px solid dimgrey;
     }
-    .away{
-        margin-left:15px !important;
+
+    .away {
+        margin-left: 15px !important;
         margin-top: 0;
     }
-    h1{
-        font-size: 40px !important;
-        height: 100px;
-        text-align: center;
-        margin-top: 0;
-        padding-top: 10px;
-        width: 100%;
-    }
-    .change{
+
+    .change {
         font-size: 20px !important;
     }
-    .logo{
+
+    .logo {
         display: block;
         width: 230px;
         height: 186px;
         float: left;
         margin-top: 20px;
     }
-    .dp{
-        width: inherit;
-        height: auto;
-    }
-    .thenav{
+
+    .thenav {
         float: right;
         margin-left: auto;
     }
-    a:link.b{
+
+    a:link.b {
         color: black;
     }
+
     a:visited.b {
         color: black;
     }
-    a:hover{
+
+    a:hover {
         color: #01b239;
         font-size: 20px;
     }
+
+    .footer {
+        padding: 20pt 0 20pt 0
+    }
 }
-@media (max-width:347px){
-    .header{
+
+@media (max-width: 347px) {
+    .header {
         color: #000;
     }
-    .logo{
-        width:200px;
+
+    .logo {
+        width: 200px;
         height: auto;
         float: left;
-        margin-top:30px;
+        margin-top: 30px;
     }
 
-    ul{
+    ul {
         list-style: none;
         padding: 0 5px 0 0;
         text-align: center !important;
     }
+
     li {
         margin-bottom: 5px;
     }
-    a:link.b{
+
+    a:link.b {
         color: black;
     }
+
     a:visited.b {
         color: black;
-    }
-    a:hover{
-        color: #01b239;
-        font-size: 20px;
     }
 }

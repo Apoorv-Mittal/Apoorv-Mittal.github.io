@@ -1,157 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Apoorv Mittal">
-        <meta name="keywords" content="HTML, CSS, Java, JavaScript, Apoorv Mittal, apoorv, mittal, UMD, software, college park">
-        <meta name="description" content="Apoorv Mittal's Website">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Apoorv Mittal">
+    <meta name="keywords"
+          content="HTML, CSS, Java, JavaScript, Apoorv Mittal, apoorv, mittal, UMD, software, college park">
+    <meta name="description" content="Apoorv Mittal's Website">
 
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="icon" href="resources/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
 
-        <title>Apoorv Mittal</title>
-    </head>
+    <title>Apoorv Mittal</title>
+</head>
+
+<style>
+
+</style>
 <body>
 
-    <!--the background image -->
-    <div class="page-bg"></div>
+<!--the nav bar -->
+<nav class="header">
+    <img src="assets/Logo.svg" alt="ITS MY LOGO" class="logo">
+    <!--<a class="logo1" href="#" target="_blank" style="border: 2px solid white; padding-right: 6px;-->
+    <!--padding-left: 6px; padding-top: 25px; padding-bottom: 6px; font-size: 25px;-->
+    <!--font-family: SF-UI-Text-Regular; border-radius: 4px; float: right; text-align: center">APOORV<br>MITTAL</a>-->
+    <ul class="thenav">
+        <li><a href="#abt" class="b">About</a></li>
+        <li><a href="#proj" class="b">Projects</a></li>
+        <li><a href="#skil" class="b">Experience</a></li>
+        <li><a href="Resume.pdf" class="b" target="_blank">Resume</a></li>
+        <li><a href="mailto:apoorv@terpmail.umd.edu" class="b">+email me</a></li>
+    </ul>
+    <div style="clear: both;"></div>
+</nav>
 
-    <!--the nav bar -->
-    <nav class="header">
-        <img src="resources/Logo.svg" alt="ITS MY LOGO"  class="logo">
-        <!--<a class="logo1" href="#" target="_blank" style="border: 2px solid white; padding-right: 6px;-->
-        <!--padding-left: 6px; padding-top: 25px; padding-bottom: 6px; font-size: 25px;-->
-        <!--font-family: SF-UI-Text-Regular; border-radius: 4px; float: right; text-align: center">APOORV<br>MITTAL</a>-->
-        <ul class="thenav">
-            <li ><a href="#abt" class="b">About</a></li>
-            <li><a href="#proj" class="b">Projects</a></li>
-            <li><a href="#skil" class="b">Experience</a></li>
-            <li><a href="/Resume.pdf" class="b" target="_blank">Resume</a></li>
-            <li><a href="mailto:apoorv@terpmail.umd.edu" class="b">+email me</a></li>
-        </ul>
-        <div style="clear: both;"></div>
-    </nav>
 
-    <!--Main body-->
-    <div class="container away jumbotron" id="abt">
-        <h1>Apoorv is</h1>
-        <img src="resources/Itsme.jpeg" alt="IT IS ME!!!" class="dp">
-        <p   style="float: left;">
-            <p class="change"> an undergraduate from the University of Maryland-College Park.
-                <br>He is currently pursuing a degree in Computer science and expect to graduate in the year 2020.<br>
-                But really he is still a kid in front of my parents.<br>
-                His sister says that he is crazy.<br>
-                His schoolmates say that he is a very straight forward person.<br>
-                There are strangers who stereotype him as a very serious person and are surprised once they get to know him. <br>
-                <br>
-                But to tell you the truth, he does not know himself.<br>
-                As far as he knows, he is a simple, kind, fun loving guy who can be crazy sometimes.<br>
-                He likes to stay busy.<br>
-                He work hard for what he has passion for.<br>
-                He can excel if given the opportunity.<br>
-                He is not sure if he has achieved something in life or not but one thing is true-He will become better compared to what he was yesterday and keep on improving himself day by day!<br>
-                <br>
-            <p style="font-size:60px" class="change">And this is Apoorv.</p>
-
-        <div style="clear: both;"></div>
+<!--the first image -->
+<div class="bgimg-1 display-container" id="home">
+    <div class="display-middle first" style="white-space: nowrap;" >
+        <p style="font-size: 24px;padding: 12px 24px; color: #fff !important; background-color: #000 !important">APOORV
+            MITTAL</p>
     </div>
-    <div class="container away jumbotron" id="proj">
-        <h1><i>Projects</i></h1>
-        <p class="change"><strong>Projects Completed</strong>
-            <br>
-            <a href="https://github.com/MentalMittal/Chatty-Online-Messaging-App-"> Messaging App: </a> A messaging app which shows the username and the message online and updates in real time.
-            <br><br>
-            <a href="/Tictactoe/Skeleton.html">Tic-tac-toe: </a>A simple tic-tac toe game designed in HTML,CSS and JavaScript with some animations.<br> Play this game with either a computer or another player.
-            <br><br>
-            <a href="/Calculator/index.html">Calculator: </a>A calculator made by HTML, CSS and JavaScript.
-            <br><br>
-            <a href="/to-do/index.html">To-Do List: </a> A personal To-Do list designed by using HTML, CSS and JavaScript.
-            <br><br>
-            <a href="/mathq/skeleton.html">Math Question Generator: </a>A simple math problem generator for my cousin brother or for anyone in grade 4 or less. It is designed in HTML and JavaScript.
-            <br><br>
-            <a href="/Texteditor/skeleton.html">Notepad: </a>A notepad designed in HTML and JavaScript which can open and save a text file on you computer
-            <br><br>
-            <a href="/Stopwatch/skeleton.html">Stopwatch and Timer: </a>Stopwatch and Timer designed by using HTML and JavaScript. The stopwatch also plays a<br> beep sound every hour and the timer play beeps every second the time is done.
-            <br><br>
-            <a href="/Time/Time.html">Watch: </a> A simple watch designed in HTML, CSS and JavaScript
-        </p>
-        <p class="change"><strong>Projects Under Work</strong>
-            <br><br>
-            Trying to learn how to contribute to open source projects.
-            <br><br>
-            <!--failed projects-->
-            <!--<a href="Weather/index.html">Weather App: </a> A weather forecast powered by Dark Sky Api.
-            <br><br>
-            <a href="/MeteorLanding/index.html"> Meteor Landing Map: </a>Meteor landings plotted on a map. Used D3 libraries.-->
-        </p>
+</div>
+
+<!--Main body-->
+<div class="container away jumbotron" id="abt">
+    <!--<img src="resources/Itsme.jpeg" alt="IT IS ME!!!" >-->
+    <p class="change">Apoorv is an undergraduate from the University of Maryland-College Park.<br>He is currently
+        pursuing a degree in Computer science and expect to graduate in the year 2020.<br>But really he is still a kid
+        in front of my parents.<br>His sister says that he is crazy.<br>His schoolmates say that he is a very straight
+        forward person.<br>There are strangers who stereotype him as a very serious person and are surprised once they
+        get to know him. <br><br>But to tell you the truth, he does not know himself.<br>As far as he knows, he is a
+        simple, kind, fun loving guy who can be crazy sometimes.<br>He likes to stay busy.<br>He work hard for what he
+        has passion for.<br>He can excel if given the opportunity.<br>He is not sure if he has achieved something in
+        life or not but one thing is true-He will become better compared to what he was yesterday and keep on improving
+        himself day by day!<br>
+</div>
+
+
+<div class="bgimg-2 display-container opacity-min" id="proj">
+    <div class="display-middle">
+        <span>PROJECTS</span>
     </div>
-    <div class="container away jumbotron" id="skil">
-        <h1><i>Skills and Experience</i></h1>
-        <p class="change">
-            <strong>Technical Skills</strong>
-            <br>Languages: Java, HTML, CSS, Javascript
-        </p>
+</div>
+
+<div class="container away jumbotron">
+    <p class="change"><strong>Projects Completed</strong>
         <br>
-        <p class="change">
-            <strong>Experience</strong>
-            <br><i>2017: <br> Student Web Developer</i> at Creative services, <br>Department of Resident life,<br>
-            University of Maryland<br>
-            • Managed Department of Resident Life and Counselling center website and made major design changes<br>
-            • Created digital marketing materials for the web, social media, and e-mail marketing<br>
-            • Worked on their <a href="http://reslife.umd.edu/guidebook/" target="_blank"> Guidebook App.</a><br>
-            <br><i>Undergraduate Research Assistant<br></i> Maryland information and Network Dynamic (MIND) Lab<br> Universiy of Maryland<br>
-            • Working under Professor Dr. Ashok Agarawala and PhD candidates in Maryland Information and Network Dynamics (MIND)
-            Lab and assisiting them in their daily operations.<br>
-            • Created an Android app to help determine the exact location of a person including the room and the floor of the building.<br>
-            <br><i>2016: </i><br><a href="https://hophacks.com/" target="_blank">HopHacks</a>, experienced a hackathon and created a social networking cross platform app called <a href="http://conneve.com">conneve</a> in which you meet people before a event.
-            <br><i>September 2016: </i><br><a href="https://msft3c.com/" target="_blank">Microsoft Coding Competition</a>, got coding competition experience during the first week of college<br>
-            <br><i>December 2015: </i><br><a href="https://www.facebook.com/questmodelun/?ref=py_c" target="_blank"> QUEST International Model United Nations,</a> represented Albania in General Assembly, researched challenging problems faced by Small Island Developing States and solved an immediate crisis<br>
-            <br><i>2015-2016: </i><br>School Captain, responsible for organizing, and supervising any school events
-        </p>
-        <p class="change"><strong>Volunteer</strong>
-            <br><i>July 2015- July 2016: </i><br><a href="http://wastewarriors.org/" target="_blank">Waste Warrior</a>, accounting, researching, helping with the day to day activities, helped clean up my home city of Dehradun
-        </p>
-    </div>
-    <div class="container away jumbotron" style="text-align: center">
-        <p class="change">
-        <p style="font-family: YuantiLight, Helvetica; font-size: 30pt;">LET'S CHAT</p>
-        <div style="margin-top: 14px; width: 50px; background-color: #565663; height: 4px; border-radius: 5px; display: inline-block;"></div><br />
-        <div style="margin-top: 8px"><p style="font-family: SF-UI-Text-Light; font-size: 16pt;">Find me on LinkedIn or Facebook to get in contact. </p></div>
-        <br>
-        <a href="https://www.linkedin.com/in/apoorv-mittal-088a21126?trk=nav_responsive_tab_profile_pic"><img src="resources/Linkedin.svg" alt="Linkedin" width="42" height="42" onmouseover="this.src='resources/Linkedin-Fill.svg';" onmouseout="this.src='resources/Linkedin.svg';"></a>
-        <a href="https://www.facebook.com/apoorv.mittal.54" ><img src="resources/Facebook.svg" alt="Facebook" width="42" height="42" onmouseover="this.src='resources/Facebook-Fill.svg';" onmouseout="this.src='resources/Facebook.svg';"></a>
-        <a href="https://github.com/MentalMittal"><img src="resources/Github.svg" alt="Github" width="42" height="42" onmouseover="this.src='resources/Github-Fill.svg';" onmouseout="this.src='resources/Github.svg';"></a>
-    </div>
+        <a href="https://github.com/MentalMittal/Chatty-Online-Messaging-App-"> Messaging App: </a> A messaging app
+        which shows the username and the message online and updates in real time.
+        <br><br>
+        <a href="/MeteorLanding/index.html"> Meteor Landing Map: </a>Meteor landings plotted on a map. Used D3
+        libraries.
+        <br><br>
+        <a href="/Tictactoe/Skeleton.html">Tic-tac-toe: </a>A simple tic-tac toe game designed in HTML,CSS and
+        JavaScript with some animations.<br> Play this game with either a computer or another player.
+        <br><br>
+        <a href="/Calculator/index.html">Calculator: </a>A calculator made by HTML, CSS and JavaScript.
+        <br><br>
+        <a href="/to-do/index.html">To-Do List: </a> A personal To-Do list designed by using HTML, CSS and JavaScript.
+        <br><br>
+        <a href="/mathq/skeleton.html">Math Question Generator: </a>A simple math problem generator for my cousin
+        brother or for anyone in grade 4 or less. It is designed in HTML and JavaScript.
+        <br><br>
+        <a href="/Stopwatch/skeleton.html">Stopwatch and Timer: </a>Stopwatch and Timer designed by using HTML and
+        JavaScript. The stopwatch also plays a<br> beep sound every hour and the timer play beeps every second the time
+        is done.
+        <br><br>
+        <a href="/Time/Time.html">Watch: </a> A simple watch designed in HTML, CSS and JavaScript
+    </p>
+    <p class="change"><strong>Projects Under Work</strong>
+        <br><br>
+        Trying to learn how to contribute to open source projects.
+        <br><br>
+        <!--failed projects-->
+        <!--<a href="Weather/index.html">Weather App: </a> A weather forecast powered by Dark Sky Api.
+        <br><br>
+        <a href="/Texteditor/skeleton.html">Notepad: </a>A notepad designed in HTML and JavaScript which can open and save a text file on you computer  -->
+    </p>
+</div>
 
 
-    <!--Scripts-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script>
-        var images = ['c817012.jpg','588d7ab.jpg', '64fac45.jpg','25a2dc8.jpg','605cfac.jpg','2cd51c3.jpg','7aca46d.jpg', '7c5b501.jpg','9e0531d.jpg','13aa25f.jpg','28dedc0.jpg','235a57b.jpg','352022c.jpg','ae22e43.jpg','d484dda.jpg', 'd5390b5.jpg','ee20b5f.jpg','f4189f0.jpg', 'nkh4dqyctv5z.jpg'];
-        $ (document).ready(function () {
-            $( "div" ).fadeIn( 2000 );
-            $( "nav" ).slideDown( 2000 );
-            $('.page-bg').css({'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')'});
-        });
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-                // Store hash
-                var hash = this.hash;
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    </script>
+<div class="bgimg-3 display-container opacity-min" id="skil">
+    <div class="display-middle">
+        <span>EXPERIENCE</span>
+    </div>
+</div>
+
+
+<div class="container away jumbotron">
+    <p class="change">
+        <strong>Technical Skills</strong>
+        <br>Languages: Java, HTML, CSS, Javascript
+    </p>
+    <br>
+    <p class="change">
+        <strong>Experience</strong>
+        <br><i>2017: <br> Student Web Developer</i> at Creative services, <br>Department of Resident life,<br>
+        University of Maryland<br>
+        • Managed Department of Resident Life and Counselling center website and made major design changes<br>
+        • Created digital marketing materials for the web, social media, and e-mail marketing<br>
+        • Worked on their <a href="http://reslife.umd.edu/guidebook/" target="_blank"> Guidebook App.</a><br>
+        <br><i>Undergraduate Research Assistant<br></i> Maryland information and Network Dynamic (MIND) Lab<br>
+        Universiy of Maryland<br>
+        • Working under Professor Dr. Ashok Agarawala and PhD candidates in Maryland Information and Network Dynamics
+        (MIND)
+        Lab and assisiting them in their daily operations.<br>
+        • Created an Android app to help determine the exact location of a person including the room and the floor of
+        the building.<br>
+        <br><i>2016: </i><br><a href="https://hophacks.com/" target="_blank">HopHacks</a>, experienced a hackathon and
+        created a social networking cross platform app called <a href="http://conneve.com">conneve</a> in which you meet
+        people before a event.
+        <br><i>September 2016: </i><br><a href="https://msft3c.com/" target="_blank">Microsoft Coding Competition</a>,
+        got coding competition experience during the first week of college<br>
+        <br><i>December 2015: </i><br><a href="https://www.facebook.com/questmodelun/?ref=py_c" target="_blank"> QUEST
+        International Model United Nations,</a> represented Albania in General Assembly, researched challenging problems
+        faced by Small Island Developing States and solved an immediate crisis<br>
+        <br><i>2015-2016: </i><br>School Captain, responsible for organizing, and supervising any school events
+    </p>
+    <p class="change"><strong>Volunteer</strong>
+        <br><i>July 2015- July 2016: </i><br><a href="http://wastewarriors.org/" target="_blank">Waste Warrior</a>,
+        accounting, researching, helping with the day to day activities, helped clean up my home city of Dehradun
+    </p>
+</div>
+
+<!--Footer-->
+<div class="footer">
+    <p style="font-family: YuantiLight, Helvetica; font-size: 30pt;">LET'S CHAT</p>
+    <div style="margin-top: 10px; width: 50px; background-color: white; height: 4px; border-radius: 5px; display: inline-block;"></div>
+    <div><p style="font-family: SF-UI-Text-Light; font-size: 16pt;">Find me on LinkedIn or
+        Facebook to get in contact. </p></div>
+    <a href="https://www.linkedin.com/in/apoorv-mittal"><img src="assets/Linkedin.svg" alt="Linkedin" width="42"
+                                                             height="42"
+                                                             onmouseover="this.src='assets/Linkedin-Fill.svg';"
+                                                             onmouseout="this.src='assets/Linkedin.svg';"></a>
+    <a href="https://www.facebook.com/apoorv.mittal.54"><img src="assets/Facebook.svg" alt="Facebook" width="42"
+                                                             height="42"
+                                                             onmouseover="this.src='assets/Facebook-Fill.svg';"
+                                                             onmouseout="this.src='assets/Facebook.svg';"></a>
+    <a href="https://github.com/Apoorv-Mittal"><img src="assets/Github.svg" alt="Github" width="42" height="42"
+                                                    onmouseover="this.src='assets/Github-Fill.svg';"
+                                                    onmouseout="this.src='assets/Github.svg';"></a>
+</div>
+
+
+<!--Scripts-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("div").fadeIn(2000);
+        $("nav").slideDown(2000);
+    });
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+</script>
 </body>
 </html>
