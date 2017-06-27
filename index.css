@@ -162,7 +162,9 @@ li a:focus {
     .bgimg-1 {
         background-attachment: scroll;
     }
-
+    .bgimg-2, .bgimg-3{
+        min-height: 300px;
+    }
     .first {
         left: 50%;
         top: 80%;
