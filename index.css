@@ -121,7 +121,7 @@ a:active {
 }
 
 a:visited {
-    color: #F0FFFF;
+    color: darkgreen;
 }
 
 li a:focus {
