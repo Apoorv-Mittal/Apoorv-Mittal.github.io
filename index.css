@@ -95,6 +95,19 @@ ul {
     color: black;
 }
 
+.pro-content img{
+    padding: 0 20px 0 20px
+}
+.pro-content{
+    color: #707C80;
+}
+.pro-content:nth-child(even) {
+    background: #FFF;
+    text-align: right;
+}
+/*.pro-content:nth-child(odd) {*/
+    /*background: #CCC*/
+/*}*/
 div {
     overflow: auto;
 }
