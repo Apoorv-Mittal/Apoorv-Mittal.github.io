@@ -2,15 +2,15 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700);
 h1 {
     font-family: 'Alegreya', serif;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 46px;
-    font-size: 46px;
+    font-size: 32px;
     margin: 0 0 43px 0;
 }
 h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: normal;
-    font-size: 21px;
+    font-size: 26px;
     line-height: 23px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -105,32 +105,36 @@ ul {
     width: 91%;
     overflow: hidden;
     color: black;
-
 }
-
 .pro-content img{
-    padding: 0 0 0 0
+    box-shadow: 10px 10px 5px #888888;
+    height: 200px;
+    width: 320px;
+    margin: 0 10px 0 10px ;
 }
 .pro-content{
+    margin: 10px 0 10px 0;
     color: #707C80;
     width:100%;
+    clear: both;
     height: 200px;
-    margin-top: 50px;
 }
-/*.pro-content:nth-child(even) {*/
-/*background: #FFF;*/
-/*}*/
-/*.pro-content:nth-child(odd) {*/
-/*background: #EFEFEF*/
-/*}*/
+.pro-content:nth-child(even) {
+    background: #FFF
+}
+.pro-content:nth-child(odd) {
+    background: #EFEFEF;
+    text-align: right;
+}
 .change {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 30px;
     margin: 0 0 23px 0;
+    clear: both;
 }
 div a:link {
-    color: #FF383F;
+    color: #76323F;
     text-decoration: none;
 }
 div a:visited {
@@ -147,15 +151,6 @@ a:hover {
     color: #01b239;
     text-decoration: none;
 }
-
-a:active {
-    color: #F0FFFF;
-}
-
-a:visited {
-    color: #F0FFFF;
-}
-
 li a:focus {
     color: #01b239;
 }
@@ -208,7 +203,13 @@ li a:focus {
         margin-bottom: 10px;
         border-bottom: 1px solid dimgrey;
     }
-
+    .pro-content{
+        margin: 10px 0 250px 0;
+        height: 200px;
+    }
+    .pro-content img{
+        margin: 0 0 10px 0 ;
+    }
     .away {
         margin-left: 15px !important;
         margin-top: 0;
