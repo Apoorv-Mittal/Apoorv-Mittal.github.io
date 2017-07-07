@@ -133,11 +133,11 @@ ul {
     }
 }
 .pro-content:nth-child(even) {
-    background: #FFF
+    background: #FFF;
+    text-align: right ;
 }
 .pro-content:nth-child(odd) {
     background: #EFEFEF;
-    text-align: right;
 }
 .change {
     font-family: 'Roboto', sans-serif;
