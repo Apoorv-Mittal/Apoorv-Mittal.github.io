@@ -118,6 +118,11 @@ ul {
     clear: both;
     height: 200px;
 }
+.work-cont img {
+    float: right;
+    box-shadow: 0 0 50px -10px #888888;
+    height: 150px;
+}
 @media  only screen and (min-width: 800px) {
     .pro-content img{
         margin-top: -50px;
