@@ -91,9 +91,10 @@ ul {
 }
 
 .logo {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     margin-top: 20px;
+    margin-left: -15px;
     background-size: contain;
 }
 
@@ -234,8 +235,8 @@ li a:focus {
 
     .logo {
         display: block;
-        width: 230px;
-        height: 186px;
+        width: 250px;
+        height: 250px;
         float: left;
         margin-top: 20px;
     }
