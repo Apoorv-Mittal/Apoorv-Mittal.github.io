@@ -3,13 +3,31 @@ import logo from '../myPhoto.jpg';
 import 'font-awesome/css/font-awesome.min.css';
 import Container from 'react-bootstrap/lib/Container';
 import resume from './Resume.pdf'
+import { start,unmount } from "./Background"
+
+
 
 class FrontPage extends Component {
+
+  componentDidMount() {
+    let canvas = this.refs.canvas
+    console.log(canvas)
+    start(canvas)
+  }
+
+  componentWillUnmount() {
+    unmount()
+  }
+
+
   render() {
     return (
-
-        <Container className="App-Back">
+      
+      <React.Fragment>
         
+        <canvas ref="canvas" className="background"></canvas>
+        
+        <Container className="App-Inside">
           <img src={logo} className="Pic" alt="Myself" />
           <p>
             Building beautiful and awesome software!
@@ -25,9 +43,12 @@ class FrontPage extends Component {
               <i className="fa fa-linkedin fa-2x" ></i>
             </a>
           </div>
+        </Container>
+      </React.Fragment>
+        
 
           
-        </Container>
+        
       
     );
   }

@@ -7,8 +7,6 @@ import './App.css';
 
 class App extends Component {
   render() {
-    console.log(this.state);
-    console.log("This is the process.env", process.env.PUBLIC_URL)
     return (
       <Container className="App">
         <Route exact path={`/`} render={ (routerProps) => < FrontPage/>} />
