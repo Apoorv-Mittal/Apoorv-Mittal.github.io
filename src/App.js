@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import FrontPage from './Components/FrontPage'
+import FrontPage from './Components/FrontPage';
+import Container from 'react-bootstrap/lib/Container';
 import './App.css';
 
 
@@ -9,9 +10,9 @@ class App extends Component {
     console.log(this.state);
     console.log("This is the process.env", process.env.PUBLIC_URL)
     return (
-      <div className="App">
+      <Container className="App">
         <Route exact path={`/`} render={ (routerProps) => < FrontPage/>} />
-      </div>
+      </Container>
       
     );
   }
