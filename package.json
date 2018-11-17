@@ -1,7 +1,7 @@
 {
   "name": "apoorv-mittal",
   "version": "0.1.0",
-  "homepage": "https://Apoorv-Mittal.github.io/",
+  "homepage": "https://apoorv-mittal.github.io",
   "private": true,
   "devDependencies": {
     "gh-pages": "^2.0.1"
@@ -18,7 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prod-push": "yarn build && cp -rf build/ ~/Downloads/App && git checkout master && cp -rf ~/Downloads/App/* . && git add . && git commit -m 'New Deployment' && git push origin master && git checkout react"
   },
   "eslintConfig": {
     "extends": "react-app"
