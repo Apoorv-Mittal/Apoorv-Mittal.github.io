@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import logo from '../myPhoto.jpg';
+import logo from './myPhoto.jpg';
 import 'font-awesome/css/font-awesome.min.css';
 import Container from 'react-bootstrap/lib/Container';
 import resume from './Resume.pdf'
