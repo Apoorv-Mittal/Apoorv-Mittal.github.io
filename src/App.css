@@ -3,6 +3,13 @@
   height: 40vmin;
 }
 
+.vertical-timeline-element-icon > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .background {
   position: fixed;
   width: 100%; 

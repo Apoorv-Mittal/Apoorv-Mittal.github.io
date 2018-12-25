@@ -11,8 +11,8 @@ render() {
         <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="May 2018 - Present"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<i className="fa fa-building fa-3x"/>}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'center' }}
+            icon={<i className="fa fa-building fa-2x"/>}
         >
             <h2 className="vertical-timeline-element-title">Web Developer</h2>
             <h4 className="vertical-timeline-element-subtitle">Joint Quantum Institute</h4>
@@ -34,8 +34,8 @@ render() {
         <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="June 2018 - Present"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<i className="fa fa-building fa-3x"/>}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'center' }}
+            icon={<i className="fa fa-building fa-2x"/>}
         >
             <h2 className="vertical-timeline-element-title">Student System Administrator</h2>
             <h4 className="vertical-timeline-element-subtitle">Department of Computer Science, University of Maryland</h4>
@@ -48,8 +48,8 @@ render() {
         <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="August 2017 - May 2018"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<i className="fa fa-building fa-3x"/>}
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff', textAlign: 'center' }}
+            icon={<i className="fa fa-building fa-2x"/>}
         >
             <h2 className="vertical-timeline-element-title">Teaching Assistant</h2>
             <h4 className="vertical-timeline-element-subtitle">Department of Computer Science, University of Maryland</h4>
@@ -61,8 +61,8 @@ render() {
         <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="May 2017 - April 2018"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<i className="fa fa-building fa-3x"/>}
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff', textAlign: 'center' }}
+            icon={<i className="fa fa-building fa-2x"/>}
         >
             <h2 className="vertical-timeline-element-title">Student Web Developer</h2>
             <h4 className="vertical-timeline-element-subtitle">Department of Resident Life, University of Maryland</h4>
@@ -76,8 +76,8 @@ render() {
         <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="July 2017 - September 2017"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<i className="fa fa-building fa-3x"/>}
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff', textAlign: 'center' }}
+            icon={<i className="fa fa-building fa-2x"/>}
         >
             <h2 className="vertical-timeline-element-title">Undergraduate Research Assistant</h2>
             <h4 className="vertical-timeline-element-subtitle">Department of Criminology and Criminal Justice, University of Maryland</h4>
@@ -97,8 +97,8 @@ render() {
         <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="May 2017 - June 2017"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<i className="fa fa-building fa-3x"/>}
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff', textAlign: 'center' }}
+            icon={<i className="fa fa-building fa-2x"/>}
         >
             <h2 className="vertical-timeline-element-title">Undergraduate Research Assistant</h2>
             <h4 className="vertical-timeline-element-subtitle">Maryland Information and Network Dynamics</h4>
@@ -111,8 +111,8 @@ render() {
         <VerticalTimelineElement
             className="vertical-timeline-element--education timeline-ele"
             date="September 2016 - Present"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<i className="fa fa-university fa-3x"/>}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'center' }}
+            icon={<i className="fa fa-university fa-2x"/>}
         >
             <h2 className="vertical-timeline-element-title">Bachelor's @ University of Maryland - College Park</h2>
 
@@ -124,8 +124,8 @@ render() {
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-            icon={<i className="fa fa-bullseye fa-3x"/>}
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff', textAlign: 'center' }}
+            icon={<i className="fa fa-bullseye fa-2x"/>}
         />
         </VerticalTimeline>
         )
