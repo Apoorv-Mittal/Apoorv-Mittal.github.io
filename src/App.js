@@ -1,17 +1,48 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import React, { Component, lazy, Suspense } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import FrontPage from './Components/FrontPage';
-import Container from 'react-bootstrap/lib/Container';
+import Work from './Components/Work';
+import Projects from './Components/Projects';
+import NotFound from './Components/NotFound';
 import './App.css';
+import { start,unmount } from "./Components/Background"
+
+const Navigation = lazy(() => import('./Components/Navigation'));
+
+const Main = () => (
+    <Switch>
+        <Route exact path={`/`} render={ (routerProps) => < FrontPage/>} />
+        <Route exact path={`/Work`} render={ (routerProps) => < Work/>} />
+        <Route exact path={`/Projects`} render={ (routerProps) => < Projects/>} />
+        <Route exact path='*' render={ (routerProps) => < NotFound/>} />
+    </Switch>
+)
 
 
 class App extends Component {
+
+  componentDidMount() {
+    let canvas = this.refs.canvas
+    console.log(canvas)
+    start(canvas)
+  }
+
+  componentWillUnmount() {
+    unmount()
+  }
+
   render() {
     return (
-      <Container className="App">
-        <Route exact path={`/`} render={ (routerProps) => < FrontPage/>} />
-      </Container>
-      
+      <div className="App">
+        <canvas ref="canvas" className="background" />
+
+        <Suspense fallback={<div>Loading...</div>}>
+          <Navigation/>
+        </Suspense>
+
+        <Main/>
+        
+      </div>
     );
   }
 }

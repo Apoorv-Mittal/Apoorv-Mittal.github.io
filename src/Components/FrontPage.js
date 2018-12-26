@@ -1,35 +1,12 @@
-import React, { Component, lazy, Suspense } from 'react';
+import React, { Component } from 'react';
 import logo from './myPhoto.jpg';
 import 'font-awesome/css/font-awesome.min.css';
-import Container from 'react-bootstrap/lib/Container';
 import resume from './Resume.pdf'
-import { start,unmount } from "./Background"
 
-const Timeline = lazy(() => import('./Timeline'));
-
-
-
-class FrontPage extends Component {
-
-  componentDidMount() {
-    let canvas = this.refs.canvas
-    console.log(canvas)
-    start(canvas)
-  }
-
-  componentWillUnmount() {
-    unmount()
-  }
-
-
+class Home extends Component {
   render() {
     return (
-      
-      <React.Fragment>
-        
-        <canvas ref="canvas" className="background"></canvas>
-        
-        <Container className="App-Inside">
+        <div className="App-Inside">
           <img src={logo} className="Pic" alt="Myself" />
           <p>
             Building beautiful and awesome software!
@@ -45,20 +22,9 @@ class FrontPage extends Component {
               <i className="fa fa-linkedin fa-2x" />
             </a>
           </div>
-        </Container>
-
-        <Suspense fallback={<div>Loading...</div>}>
-          <Timeline />
-        </Suspense>
-
-      </React.Fragment>
-        
-
-          
-        
-      
+        </div>
     );
   }
 }
 
-export default FrontPage;
+export default Home;

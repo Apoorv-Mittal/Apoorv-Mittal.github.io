@@ -3,12 +3,27 @@
   height: 40vmin;
 }
 
-.vertical-timeline-element-icon > i {
+.vertical-timeline-element-icon > i, .center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+nav > a {
+  color: #9d9d9d!important;
+}
+
+.NavLinks {
+  color : #9d9d9d;
+}
+
+.NavLinks:hover, .NavLinks:focus {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 
 .background {
   position: fixed;
@@ -34,6 +49,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App {
+  top: 0px;
+  width: 100vw;
+  position: absolute;
+}
+
+.Article {
+  color: white;
+  text-align: left;
+  padding: 0px 40px 0px 40px;
 }
 
 i {
