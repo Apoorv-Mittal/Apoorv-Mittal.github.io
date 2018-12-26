@@ -37,8 +37,12 @@ nav > a {
   background-color: #282c34;
 }
 
-.vertical-timeline-element-content .vertical-timeline-element-date {
-  color: white!important
+@media screen and (min-width:1170px){
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    color: white!important;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .App-Inside {
