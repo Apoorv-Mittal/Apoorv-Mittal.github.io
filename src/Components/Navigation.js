@@ -42,7 +42,7 @@ class Navigation extends Component {
                 </Link>
               </MenuItem>
               <MenuItem divider />
-              <MenuItem eventKey={4.4} href="/CMSC330">
+              <MenuItem eventKey={4.4}>
                 <Link to={`/CMSC330`} className='NavLinks' style={{color: 'black'}}>
                   Organization of Programming Languages
                 </Link>
