@@ -57,14 +57,15 @@ nav > a {
 
 .App {
   top: 0px;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   position: absolute;
 }
 
 .Article {
   color: white;
   text-align: left;
-  padding: 0px 40px 0px 40px;
+  padding: 0px 40px 40px 40px;
 }
 
 i {
@@ -78,4 +79,8 @@ i:hover {
 
 i:visited {
   color: green;
+}
+
+a {
+  color: red;
 }
