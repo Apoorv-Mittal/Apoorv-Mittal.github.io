@@ -1,7 +1,7 @@
 import React from "react";
 import { PageHeader } from 'react-bootstrap';
  
- const CMSC320 = () =>
+ const CMSC330 = () =>
      <div className="Article" >
         <PageHeader>
         Organization of Programming Languages (CMSC330)
@@ -67,4 +67,4 @@ import { PageHeader } from 'react-bootstrap';
 
     </div>;
  
- export default CMSC320;
+ export default CMSC330;
