@@ -24,25 +24,25 @@ class Navigation extends Component {
               </Link>
             </NavItem>
             <NavDropdown eventKey={4} title="ACADEMIC EXPERIENCE" id="basic-nav-dropdown">
-              <MenuItem eventKey={4.1}>
+              <MenuItem eventKey={4.1} style={{color: 'black', backgroundColor:'white'}}>
                 <Link to={`/CMSC433`} className='NavLinks' style={{color: 'black'}}>
                   Programming Language Technologies and Paradigms
                 </Link>
               </MenuItem>
               <MenuItem divider />
-              <MenuItem eventKey={4.2}>
+              <MenuItem eventKey={4.2} style={{color: 'black', backgroundColor:'white'}}>
                 <Link to={`/CMSC420`} className='NavLinks' style={{color: 'black'}}>
                   Data Structures
                 </Link>
               </MenuItem>
               <MenuItem divider />
-              <MenuItem eventKey={4.3}>
+              <MenuItem eventKey={4.3} style={{color: 'black', backgroundColor:'white'}}>
                 <Link to={`/CMSC320`} className='NavLinks' style={{color: 'black'}}>
                   Introduction to Data Science
                 </Link>
               </MenuItem>
               <MenuItem divider />
-              <MenuItem eventKey={4.4}>
+              <MenuItem eventKey={4.4} style={{color: 'black', backgroundColor:'white'}}>
                 <Link to={`/CMSC330`} className='NavLinks' style={{color: 'black'}}>
                   Organization of Programming Languages
                 </Link>
