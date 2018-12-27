@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 class Navigation extends Component {
@@ -8,52 +8,52 @@ class Navigation extends Component {
   render() {
     return (
       <Navbar inverse fluid style={{top: '0px', position: 'relative', backgroundColor: 'transparent', border: 'none', width: '100%'}}>
+
         <Navbar.Header>
           <Navbar.Toggle />
         </Navbar.Header>
+
         <Navbar.Collapse>
           <Nav>
-            <NavItem eventKey={1}>  
-              <Link to={`/`} className='NavLinks'>
+
+            <NavItem componentClass={NavLink} href="/" to="/" eventKey={1} >  
               HOME
-              </Link>        
             </NavItem>
-            <NavItem eventKey={3}>
-              <Link to={`/Work`} className='NavLinks'>
+
+            <NavItem componentClass={NavLink} href="/Work" to="/Work" eventKey={2}>
               WORK EXPERIENCE
-              </Link>
             </NavItem>
-            <NavDropdown eventKey={4} title="ACADEMIC EXPERIENCE" id="basic-nav-dropdown">
-              <MenuItem eventKey={4.1} style={{color: 'black', backgroundColor:'white'}}>
-                <Link to={`/CMSC433`} className='NavLinks' style={{color: 'black'}}>
-                  Programming Language Technologies and Paradigms
-                </Link>
+
+            <NavDropdown eventKey={3} title="ACADEMIC EXPERIENCE" id="basic-nav-dropdown">
+
+              <MenuItem componentClass={NavLink} href="/CMSC433" to="/CMSC433"  eventKey={3.1} className ="dropdownLi">
+                Programming Language Technologies and Paradigms
               </MenuItem>
+
               <MenuItem divider />
-              <MenuItem eventKey={4.2} style={{color: 'black', backgroundColor:'white'}}>
-                <Link to={`/CMSC420`} className='NavLinks' style={{color: 'black'}}>
-                  Data Structures
-                </Link>
+
+              <MenuItem componentClass={NavLink} href="/CMSC420" to="/CMSC420"  eventKey={3.2} className ="dropdownLi">
+                Data Structures                
               </MenuItem>
+
               <MenuItem divider />
-              <MenuItem eventKey={4.3} style={{color: 'black', backgroundColor:'white'}}>
-                <Link to={`/CMSC320`} className='NavLinks' style={{color: 'black'}}>
-                  Introduction to Data Science
-                </Link>
+
+              <MenuItem componentClass={NavLink} href="/CMSC320" to="/CMSC320" eventKey={3.3} className ="dropdownLi">
+                Introduction to Data Science
               </MenuItem>
+
               <MenuItem divider />
-              <MenuItem eventKey={4.4} style={{color: 'black', backgroundColor:'white'}}>
-                <Link to={`/CMSC330`} className='NavLinks' style={{color: 'black'}}>
-                  Organization of Programming Languages
-                </Link>
+
+              <MenuItem componentClass={NavLink} href="/CMSC330" to="/CMSC330" eventKey={3.4} className ="dropdownLi">
+                Organization of Programming Languages
               </MenuItem>
             </NavDropdown>
-            <NavItem eventKey={5}>
-              <Link to={`/Projects`} className='NavLinks'>
+
+            <NavItem componentClass={NavLink} href="/Projects" to="/Projects" eventKey={4}>
               PERSONAL PROJECTS
-              </Link>
             </NavItem>
           </Nav>
+
           <Nav pullRight>
             <NavItem eventKey={1} href="mailto:apoorv@terpmail.umd.edu">
               CONTACT ME

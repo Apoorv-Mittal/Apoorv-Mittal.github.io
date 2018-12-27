@@ -14,16 +14,20 @@ nav > a {
   color: #9d9d9d!important;
 }
 
-.NavLinks {
-  color : #9d9d9d;
+
+@media screen and (min-width:770px){
+  .dropdownLi {
+    color: black;
+    background-color: white;
+  }
 }
 
-.NavLinks:hover, .NavLinks:focus {
-  color: #fff;
-  background-color: transparent;
-  text-decoration: none;
-}
 
+
+.dropdownLi > a {
+  margin: -9px 0px -9px 0px;
+  padding: 9px !important;
+}
 
 .background {
   position: fixed;

@@ -1,5 +1,5 @@
 import React, { Component, lazy, Suspense } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import FrontPage from './Components/FrontPage';
 import Work from './Components/Work';
 import Projects from './Components/Projects';
@@ -12,19 +12,6 @@ import './App.css';
 import { start,unmount } from "./Components/Background"
 
 const Navigation = lazy(() => import('./Components/Navigation'));
-
-const Main = () => (
-    <Switch>
-        <Route exact path={`/`} render={ (routerProps) => < FrontPage/>} />
-        <Route exact path={`/Work`} render={ (routerProps) => < Work/>} />
-        <Route exact path={`/CMSC433`} render={ (routerProps) => < CMSC433/>} />
-        <Route exact path={`/CMSC420`} render={ (routerProps) => < CMSC420/>} />
-        <Route exact path={`/CMSC320`} render={ (routerProps) => < CMSC320/>} />
-        <Route exact path={`/CMSC330`} render={ (routerProps) => < CMSC330/>} />
-        <Route exact path={`/Projects`} render={ (routerProps) => < Projects/>} />
-        <Route exact path='*' render={ (routerProps) => < NotFound/>} />
-    </Switch>
-)
 
 
 class App extends Component {
@@ -41,16 +28,27 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <canvas ref="canvas" className="background" />
+      <BrowserRouter>
+        <div className="App">
+          <canvas ref="canvas" className="background" />
 
-        <Suspense fallback={<div>Loading...</div>}>
-          <Navigation/>
-        </Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Navigation/>
+          </Suspense>
 
-        <Main/>
-        
-      </div>
+          <Switch>
+            <Route exact path={`/`} render={ (routerProps) => < FrontPage/>} />
+            <Route exact path={`/Work`} render={ (routerProps) => < Work/>} />
+            <Route exact path={`/CMSC433`} render={ (routerProps) => < CMSC433/>} />
+            <Route exact path={`/CMSC420`} render={ (routerProps) => < CMSC420/>} />
+            <Route exact path={`/CMSC320`} render={ (routerProps) => < CMSC320/>} />
+            <Route exact path={`/CMSC330`} render={ (routerProps) => < CMSC330/>} />
+            <Route exact path={`/Projects`} render={ (routerProps) => < Projects/>} />
+            <Route exact path='*' render={ (routerProps) => < NotFound/>} />
+          </Switch>
+          
+        </div>
+      </BrowserRouter>
     );
   }
 }
