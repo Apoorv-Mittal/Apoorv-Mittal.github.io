@@ -2,7 +2,7 @@ import React, { Component, lazy, Suspense } from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import FrontPage from './Components/FrontPage';
 import Work from './Components/Work';
-import Projects from './Components/Projects';
+import Projects from './Components/Projects/Projects';
 import NotFound from './Components/NotFound';
 import CMSC433 from './Components/CMSC433/CMSC433';
 import CMSC420 from './Components/CMSC420/CMSC420';
