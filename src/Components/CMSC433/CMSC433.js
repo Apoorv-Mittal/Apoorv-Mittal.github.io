@@ -11,7 +11,7 @@ import { PageHeader } from 'react-bootstrap';
         <PageHeader>
         Programming Language Technologies and Paradigms (CMSC433)
         </PageHeader>
-        CMSC433 covers principles associated with programming concurrent and distributed software. (Mamat, 433 <a href='http://www.cs.umd.edu/class/spring2018/cmsc433/'>Class Page</a>)
+        <p>CMSC433 covers principles associated with programming concurrent and distributed software. (Mamat, 433 <a href='http://www.cs.umd.edu/class/spring2018/cmsc433/'>Class Page</a>)</p>
 
         <div>
 
@@ -22,7 +22,7 @@ import { PageHeader } from 'react-bootstrap';
                 </a>
             </small>
         </PageHeader>
-        In this project I simulated an auction service in which sellers can offer items and bidders can bid on them. In particular, I implemented a class, AuctionServer, in Java that provides methods supporting all aspects of an auction. Because many sellers and bidders will be interacting at the same time, the program was thread-safe.
+        <p>In this project I simulated an auction service in which sellers can offer items and bidders can bid on them. In particular, I implemented a class, AuctionServer, in Java that provides methods supporting all aspects of an auction. Because many sellers and bidders will be interacting at the same time, the program was thread-safe.</p>
 
 
         <PageHeader>
@@ -32,7 +32,7 @@ import { PageHeader } from 'react-bootstrap';
                 </a>
             </small>
         </PageHeader>
-        In this project, I wrote a simulation for (a highly simplified) Ratsie’s (-like restaurant). The simulation has four parameters: the number of customers wishing to enter Ratsie’s; the number of tables in the restaurant; the number of cooks in the kitchen that fill orders; the capacity of machines in the kitchen used for producing food.
+        <p>In this project, I wrote a simulation for (a highly simplified) Ratsie’s (-like restaurant). The simulation has four parameters: the number of customers wishing to enter Ratsie’s; the number of tables in the restaurant; the number of cooks in the kitchen that fill orders; the capacity of machines in the kitchen used for producing food.</p>
 
 
         <PageHeader>
@@ -42,7 +42,7 @@ import { PageHeader } from 'react-bootstrap';
                 </a>
             </small>
         </PageHeader>
-        In this project, I wrote an efficient solver for two-dimensional mazes.
+        <p>In this project, I wrote an efficient solver for two-dimensional mazes.</p>
 
         <PageHeader>
             <small style={{color:'white'}}>Project 4 - &nbsp;
@@ -51,7 +51,7 @@ import { PageHeader } from 'react-bootstrap';
                 </a>
             </small>
         </PageHeader>
-        In this project, I implemented a distributed resource-management scheme using akka actors.
+        <p>In this project, I implemented a distributed resource-management scheme using akka actors.</p>
 
         <PageHeader>
             <small style={{color:'white'}}>Project 5 - &nbsp;
@@ -60,7 +60,7 @@ import { PageHeader } from 'react-bootstrap';
                 </a>
             </small>
         </PageHeader>
-        In this project I used Hadoop to build a tool for processing sets of Twitter posts (i.e. tweets) and determining which people, tweets, hashtags, and pairs of hashtags are most popular.
+        <p>In this project I used Hadoop to build a tool for processing sets of Twitter posts (i.e. tweets) and determining which people, tweets, hashtags, and pairs of hashtags are most popular.</p>
         
 
         </div>       
