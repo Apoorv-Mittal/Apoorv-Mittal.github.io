@@ -96,3 +96,8 @@ i:visited {
 a {
   color: red;
 }
+
+a:hover {
+  text-decoration: none;
+  color: green;
+}
