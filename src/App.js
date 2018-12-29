@@ -1,5 +1,5 @@
 import React, { Component, lazy, Suspense } from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 import FrontPage from './Components/FrontPage';
 import Work from './Components/Work';
 import Projects from './Components/Projects/Projects';
@@ -28,7 +28,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div className="App">
           <canvas ref="canvas" className="background" />
 
@@ -48,7 +48,7 @@ class App extends Component {
           </Switch>
           
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
