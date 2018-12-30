@@ -9,10 +9,12 @@ import CMSC420 from './Components/CMSC420/CMSC420';
 import CMSC320 from './Components/CMSC320/CMSC320';
 import CMSC330 from './Components/CMSC330/CMSC330';
 import './App.css';
-import { start,unmount } from "./Components/Background"
+import { start,unmount } from "./Components/Background";
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-100589361-1', { standardImplementation: true });
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Navigation = lazy(() => import('./Components/Navigation'));
-
 
 class App extends Component {
 
