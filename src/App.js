@@ -10,9 +10,9 @@ import CMSC320 from './Components/CMSC320/CMSC320';
 import CMSC330 from './Components/CMSC330/CMSC330';
 import './App.css';
 import { start,unmount } from "./Components/Background";
+import withTracker from './Components/withTracker';
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-100589361-1', { standardImplementation: true });
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.initialize('UA-100589361-2');
 
 const Navigation = lazy(() => import('./Components/Navigation'));
 
@@ -22,6 +22,7 @@ class App extends Component {
     let canvas = this.refs.canvas
     console.log(canvas)
     start(canvas)
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }
 
   componentWillUnmount() {
@@ -39,14 +40,15 @@ class App extends Component {
           </Suspense>
 
           <Switch>
-            <Route exact path={`/`} render={ (routerProps) => < FrontPage/>} />
-            <Route exact path={`/Work`} render={ (routerProps) => < Work/>} />
-            <Route exact path={`/CMSC433`} render={ (routerProps) => < CMSC433/>} />
-            <Route exact path={`/CMSC420`} render={ (routerProps) => < CMSC420/>} />
-            <Route exact path={`/CMSC320`} render={ (routerProps) => < CMSC320/>} />
-            <Route exact path={`/CMSC330`} render={ (routerProps) => < CMSC330/>} />
-            <Route exact path={`/Projects`} render={ (routerProps) => < Projects/>} />
-            <Route exact path='*' render={ (routerProps) => < NotFound/>} />
+            <Route exact path={`/`} render={withTracker(FrontPage)} />
+            <Route exact path={`/Work`} render={withTracker(Work)} />
+            <Route exact path={`/CMSC433`} render={withTracker(CMSC433)} />
+            <Route exact path={`/CMSC420`} render={withTracker(CMSC420)} />
+            <Route exact path={`/CMSC320`} render={withTracker(CMSC320)} />
+            <Route exact path={`/CMSC330`} render={withTracker(CMSC330)} />
+            <Route exact path={`/Projects`} render={withTracker(Projects)} />
+            <Route exact path='*' render={withTracker(NotFound)} />
+
           </Switch>
           
         </div>
