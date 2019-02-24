@@ -20,13 +20,16 @@ class App extends Component {
 
   componentDidMount() {
     let canvas = this.refs.canvas
-    console.log(canvas)
     start(canvas)
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname + window.location.search)
   }
 
   componentWillUnmount() {
     unmount()
+  }
+
+  componentDidUpdate(...ele) {
+    ReactGA.pageview(window.location.hash.substring(1))
   }
 
   render() {
