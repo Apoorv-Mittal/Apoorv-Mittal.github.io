@@ -10,7 +10,6 @@ import CMSC320 from './Components/CMSC320/CMSC320';
 import CMSC330 from './Components/CMSC330/CMSC330';
 import './App.css';
 import { start,unmount } from "./Components/Background";
-import withTracker from './Components/withTracker';
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-100589361-2');
 
@@ -43,14 +42,14 @@ class App extends Component {
           </Suspense>
 
           <Switch>
-            <Route exact path={`/`} render={withTracker(FrontPage)} />
-            <Route exact path={`/Work`} render={withTracker(Work)} />
-            <Route exact path={`/CMSC433`} render={withTracker(CMSC433)} />
-            <Route exact path={`/CMSC420`} render={withTracker(CMSC420)} />
-            <Route exact path={`/CMSC320`} render={withTracker(CMSC320)} />
-            <Route exact path={`/CMSC330`} render={withTracker(CMSC330)} />
-            <Route exact path={`/Projects`} render={withTracker(Projects)} />
-            <Route exact path='*' render={withTracker(NotFound)} />
+            <Route exact path={`/`} render={() => <FrontPage/>} />
+            <Route exact path={`/Work`} render={() => <Work/>} />
+            <Route exact path={`/CMSC433`} render={() => <CMSC433/>} />
+            <Route exact path={`/CMSC420`} render={() => <CMSC420/>} />
+            <Route exact path={`/CMSC320`} render={() => <CMSC320/>} />
+            <Route exact path={`/CMSC330`} render={() => <CMSC330/>} />
+            <Route exact path={`/Projects`} render={() => <Projects/>} />
+            <Route exact path='*' render={() => <NotFound/>} />
 
           </Switch>
           
