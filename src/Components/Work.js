@@ -17,7 +17,7 @@ render() {
             <h2 className="vertical-timeline-element-title">Web Developer</h2>
             <h4 className="vertical-timeline-element-subtitle">Joint Quantum Institute</h4>
             <p>
-            I am a Web developer working with Emily Edwards and Chris Caesar  from Joint Quantum Institute at the University of Maryland and the National Institute of Standards and Technology, College Park.<br/>
+            I am a Web developer working with Emily Edwards and Chris Cesare  from Joint Quantum Institute at the University of Maryland and the National Institute of Standards and Technology, College Park.<br/>
             <br/>
             Part of National Science Foundation (NSF) #1713387 Grant funded Advancing Informal STEM Learning (AISL) program that seeks to advance new approaches to, and evidence-based understanding of, the design and development of STEM learning in informal environments. The goal of this project is to make 21st century quantum science comprehensible and engaging to non-expert informal adult learners.<br/>
             <br/>
@@ -26,7 +26,7 @@ render() {
             - Creating a modular website using React.js framework with many multimedia elements and a structure to expand in future<br/>
             - Using three.js and GreenSock (GSAP) for short animations, graphics, and simulations and developing a visually driven online resource to engage non-expert audiences in understanding the basics of quantum physics. <br/>
             - Using latest libraries with React.js like styled components to make styling of individual articles easier. <br/>
-            - Making the website and its interactive components Open-Source so that they can be imbedded in other websites. <br/>
+            - Making the website and its interactive components Open-Source so that they can be embedded in other websites. <br/>
             - Also maintaining the existing Joint Quantum Institute website, updating its individual Drupal modules and working on upgrading the Drupal core from 7 to 8. <br/>
             - Created a Drupal website for Condensed Matter Theory Center at UMD<br/>
             </p>
