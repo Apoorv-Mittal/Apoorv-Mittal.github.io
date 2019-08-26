@@ -5,15 +5,32 @@ import 'font-awesome/css/font-awesome.min.css'
 
 
 class Timeline extends Component {
-render() {
-    return (
-        <VerticalTimeline className="timeline">
-        <VerticalTimelineElement
+    render() {
+        return (
+            <VerticalTimeline className="timeline">
+            <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
-            date="May 2018 - Present"
+            date="June 2019 - Present"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'center' }}
             icon={<i className="fa fa-building fa-2x"/>}
-        >
+            >
+            <h2 className="vertical-timeline-element-title">Software Engineering Intern</h2>
+            <h4 className="vertical-timeline-element-subtitle">DrFirst </h4>
+            <p>
+            - Designed and developed RESTful apis in Spring Boot Integration server for DrFirst’s e-prescribing mobile app to support a new third-party identity proofing system. Helped come up with the changes required in two other applications for this integration
+            - Communicated with product owners and third-party companies about requirements for any new feature or implementation change, ensuring NIST standards and legal guidelines 
+            - Fixing production issues related to Single Sign-On users unable to login after using the old identity proofing method. Worked with Data base Administrators, and Support Staff to identify, solve and verify the problems
+            - Helped Quality Assurance Engineers understand new SureScript standard resulting in robust testing
+            - Applied Best Practices of Software Design to elevate code quality and system design. Feature Driven Development, Pair Programming and Extreme Programming.  
+            - Collaborated and participated in daily Scrum/Agile meetings, code reviews, and sprint planning
+            </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+            className="vertical-timeline-element--work timeline-ele"
+            date="May 2018 - June 2019"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'center' }}
+            icon={<i className="fa fa-building fa-2x"/>}
+            >
             <h2 className="vertical-timeline-element-title">Web Developer</h2>
             <h4 className="vertical-timeline-element-subtitle">Joint Quantum Institute</h4>
             <p>
@@ -30,13 +47,13 @@ render() {
             - Also maintaining the existing Joint Quantum Institute website, updating its individual Drupal modules and working on upgrading the Drupal core from 7 to 8. <br/>
             - Created a Drupal website for Condensed Matter Theory Center at UMD<br/>
             </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
-            date="June 2018 - Present"
+            date="June 2018 - June 2019"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'center' }}
             icon={<i className="fa fa-building fa-2x"/>}
-        >
+            >
             <h2 className="vertical-timeline-element-title">Student System Administrator</h2>
             <h4 className="vertical-timeline-element-subtitle">Department of Computer Science, University of Maryland</h4>
             <p>
@@ -44,26 +61,26 @@ render() {
             - Setting up VMs and new Red Hat Systems through Cobbler and managing them through Puppet<br/>
             - Creating automated scripts to set up new accounts, web pages and VMs on CS servers<br/>
             </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="August 2017 - May 2018"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff', textAlign: 'center' }}
             icon={<i className="fa fa-building fa-2x"/>}
-        >
+            >
             <h2 className="vertical-timeline-element-title">Teaching Assistant</h2>
             <h4 className="vertical-timeline-element-subtitle">Department of Computer Science, University of Maryland</h4>
             <p>
             - Teaching assistant for Dr. Evan Golub, Dr Roger Eastman and Dr. Ilchul Yoon teaching Object Oriented Programming. <br/>
             - Taught a class of 30 student and held office hours to provide help for programming assignments <br/>
             </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="May 2017 - April 2018"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff', textAlign: 'center' }}
             icon={<i className="fa fa-building fa-2x"/>}
-        >
+            >
             <h2 className="vertical-timeline-element-title">Student Web Developer</h2>
             <h4 className="vertical-timeline-element-subtitle">Department of Resident Life, University of Maryland</h4>
             <p>
@@ -72,13 +89,13 @@ render() {
             -	Created digital marketing materials for the web, social media, and e-mail marketing targeted towards students and parents <br/>
             -	Enhanced their guidebook app and making it more suitable for students<br/>
             </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="July 2017 - September 2017"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff', textAlign: 'center' }}
             icon={<i className="fa fa-building fa-2x"/>}
-        >
+            >
             <h2 className="vertical-timeline-element-title">Undergraduate Research Assistant</h2>
             <h4 className="vertical-timeline-element-subtitle">Department of Criminology and Criminal Justice, University of Maryland</h4>
             <p>
@@ -93,13 +110,13 @@ render() {
             -Capturing primary data on the WiFi activity of network users on Linux in real-time utilizing a host system connected to Verizon MiFi broadband wireless router.<br/>
             -Mapping the layout and movement at source points, as well as monitoring and analysis of sniffed packets from users in potential research locations spread across Washington DC, Maryland and Virginia.<br/>
             </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
             className="vertical-timeline-element--work timeline-ele"
             date="May 2017 - June 2017"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff', textAlign: 'center' }}
             icon={<i className="fa fa-building fa-2x"/>}
-        >
+            >
             <h2 className="vertical-timeline-element-title">Undergraduate Research Assistant</h2>
             <h4 className="vertical-timeline-element-subtitle">Maryland Information and Network Dynamics</h4>
             <p>
@@ -107,29 +124,29 @@ render() {
             <br/>
             -	Created an Android app to help determine the exact location of a person including the room and the floor of the building using Wi-Fi access points. 
             </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
             className="vertical-timeline-element--education timeline-ele"
             date="September 2016 - Present"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', textAlign: 'center' }}
             icon={<i className="fa fa-university fa-2x"/>}
-        >
+            >
             <h2 className="vertical-timeline-element-title">Bachelor's @ University of Maryland - College Park</h2>
-
+            
             <p>
             Major: Computer Science
             </p>
             <p>
             Minor: Statistics
             </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff', textAlign: 'center' }}
             icon={<i className="fa fa-bullseye fa-2x"/>}
-        />
-        </VerticalTimeline>
-        )
-  }
-}
-
-export default Timeline
+            />
+            </VerticalTimeline>
+            )
+        }
+    }
+    
+    export default Timeline
