@@ -13,5 +13,5 @@ jobs:
     steps:
     - name: Deploy
       run:
-        eval $( echo "yarn build && cp -rf build/ /tmp/web && git checkout master && rm -rf * && cp -rf /tmp/web/* . && git add . && git commit -m 'Github Action' && git push origin master && git checkout React && rm -rf /tmp/web/")
+        eval $( echo "npm install && npm build && cp -rf build/ /tmp/web && git checkout master && rm -rf * && cp -rf /tmp/web/* . && git add . && git commit -m 'Github Action' && git push origin master && git checkout React && rm -rf /tmp/web/")
       shell: bash
