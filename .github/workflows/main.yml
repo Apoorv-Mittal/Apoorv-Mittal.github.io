@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - React
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Deploy
+      run:
+        eval $( echo "yarn build && cp -rf build/ /tmp/web && git checkout master && rm -rf * && cp -rf /tmp/web/* . && git add . && git commit -m 'Github Action' && git push origin master && git checkout React && rm -rf /tmp/web/")
+      shell: bash
