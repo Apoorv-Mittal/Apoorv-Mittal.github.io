@@ -1,4 +1,4 @@
-name: CI
+name: Deploy on Github Pages
 
 on:
   push:
@@ -11,7 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+    - name: NPM install 
+      run: 
+        npm install
+    - name: NPM build 
+      run: 
+        npm run build
     - name: Deploy
-      run:
-        eval $( echo "npm install && npm build && cp -rf build/ /tmp/web && git checkout master && rm -rf * && cp -rf /tmp/web/* . && git add . && git commit -m 'Github Action' && git push origin master && git checkout React && rm -rf /tmp/web/")
-      shell: bash
+      uses: peaceiris/actions-gh-pages@v2.2.0
+      env:
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./build
