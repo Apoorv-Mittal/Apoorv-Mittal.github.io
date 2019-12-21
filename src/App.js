@@ -1,5 +1,6 @@
 import React, { Component, lazy, Suspense } from 'react';
 import { Switch, Route, HashRouter } from 'react-router-dom';
+import Spinner from 'react-bootstrap/Spinner';
 import FrontPage from './Components/FrontPage';
 import Work from './Components/Work';
 import Projects from './Components/Projects/Projects';
@@ -39,7 +40,7 @@ class App extends Component {
         <div className="App">
           <canvas ref="canvas" className="background" />
 
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Spinner animation="grow" />}>
             <Navigation/>
           </Suspense>
 
@@ -54,7 +55,6 @@ class App extends Component {
             <Route exact path={`/CMSC330`} render={() => <CMSC330/>} />
             <Route exact path={`/Projects`} render={() => <Projects/>} />
             <Route exact path='*' render={() => <NotFound/>} />
-
           </Switch>
           
         </div>
