@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './myPhoto.jpg';
 import 'font-awesome/css/font-awesome.min.css';
 import resume from './Resume.pdf'
-import resumeWithCourseWork from './Resume-With-CourseWork.pdf'
 
 class Home extends Component {
   render() {
@@ -23,9 +22,6 @@ class Home extends Component {
               <i className="fa fa-linkedin fa-2x" />
             </a>
           </div>
-          <a href ={ resumeWithCourseWork } hidden>
-              <i className="fa fa-file-pdf-o fa-2x"/>
-            </a>
         </div>
     );
   }
