@@ -23,30 +23,29 @@ class Navigation extends Component {
 
   render() {
     return (
-      <Navbar onToggle={this.setNavExpanded} 
-      expanded={this.state.navExpanded} variant="dark" expand="lg">
+      <Navbar onToggle={this.setNavExpanded} expanded={this.state.navExpanded} variant="dark" expand="lg">
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle className="ml-auto" aria-controls="main-navbar-nav" />
 
         <Navbar.Collapse>
-          <Nav id="basic-navbar-nav" >
+          <Nav id="main-navbar-nav">
 
-            <Nav.Item className="pl-2 pr-2" >  
-            <NavLink className="nav-link" to="/" onClick={this.closeNav}>HOME</NavLink>
+            <Nav.Item className="pl-2 pr-2">
+              <NavLink className="nav-link" to="/" onClick={this.closeNav}>HOME</NavLink>
             </Nav.Item>
 
             <Nav.Item className="pl-2 pr-2">
-            <NavLink className="nav-link" to="/Work" onClick={this.closeNav}>WORK</NavLink>
+              <NavLink className="nav-link" to="/Work" onClick={this.closeNav}>WORK</NavLink>
             </Nav.Item>
 
             <Nav.Item className="pl-2 pr-2">
-            <NavLink className="nav-link" to="/Projects" onClick={this.closeNav}>PROJECTS</NavLink>
+              <NavLink className="nav-link" to="/Projects" onClick={this.closeNav}>PROJECTS</NavLink>
             </Nav.Item>
           </Nav>
 
-          <Nav  className="ml-auto">
+          <Nav className="ml-auto">
             <Nav.Item className="pl-2 pr-2">
-            <a className="nav-link" href="mailto:apoorv@terpmail.umd.edu">CONTACT ME</a>
+              <a className="nav-link" href="mailto:apoorv@terpmail.umd.edu">CONTACT ME</a>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
