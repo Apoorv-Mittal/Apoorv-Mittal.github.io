@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { NavLink } from "react-router-dom"
 
 
@@ -7,32 +7,30 @@ class Navigation extends Component {
 
   render() {
     return (
-      <Navbar inverse fluid style={{top: '0px', position: 'relative', backgroundColor: 'transparent', border: 'none', width: '100%'}}>
+      <Navbar variant="dark" >
 
-        <Navbar.Header>
-          <Navbar.Toggle />
-        </Navbar.Header>
+        <Navbar.Toggle />
 
         <Navbar.Collapse>
           <Nav>
 
-            <NavItem componentClass={NavLink} href="/" to="/" eventKey={1} >  
-              HOME
-            </NavItem>
+            <Nav.Item className="pl-2 pr-2">  
+            <NavLink className="nav-link" to="/">HOME</NavLink>
+            </Nav.Item>
 
-            <NavItem componentClass={NavLink} href="/Work" to="/Work" eventKey={2}>
-              WORK
-            </NavItem>
+            <Nav.Item className="pl-2 pr-2">
+            <NavLink className="nav-link" to="/Work">WORK</NavLink>
+            </Nav.Item>
 
-            <NavItem componentClass={NavLink} href="/Projects" to="/Projects" eventKey={3}>
-              PROJECTS
-            </NavItem>
+            <Nav.Item className="pl-2 pr-2">
+            <NavLink className="nav-link" to="/Projects">PROJECTS</NavLink>
+            </Nav.Item>
           </Nav>
 
-          <Nav pullRight>
-            <NavItem eventKey={1} href="mailto:apoorv@terpmail.umd.edu">
-              CONTACT ME
-            </NavItem>
+          <Nav>
+            <Nav.Item className="pl-2 pr-2">
+            <a className="nav-link" href="mailto:apoorv@terpmail.umd.edu">CONTACT ME</a>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

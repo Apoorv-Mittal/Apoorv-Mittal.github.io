@@ -1,15 +1,14 @@
 import React from "react";
-import { PageHeader } from 'react-bootstrap';
- 
- const Projects = () =>
-     <div className="Article" >
-        <PageHeader>
-            Projects
-        </PageHeader>
 
-        <PageHeader>
-            <small style={{color:'white'}}>Open Source Contributions</small>
-        </PageHeader>
+const Projects = () =>
+    <div className="Article" >
+        <div className="pb-2 mt-4 mb-2 border-bottom">
+            <h2>Projects</h2>
+        </div>
+
+        <div className="pb-2 mt-4 mb-2 border-bottom">
+            <h3>Open Source Contributions</h3>
+        </div>
 
         <h3>
             <a href = 'https://github.com/facebook/react'>
@@ -18,7 +17,7 @@ import { PageHeader } from 'react-bootstrap';
         </h3>
         <p>Contributed to the documentation for Facebook’s React.js and added explanations for passing props in the ‘Intro to React’ page. The PR can be found <a href='https://github.com/facebook/react/pull/10190'>here</a>.</p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '0 auto', padding: '20px 0px'}}/>
+        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
 
         <h3>
             <a href = 'https://github.com/philipp-spiess/this-week-in-react'>
@@ -27,9 +26,9 @@ import { PageHeader } from 'react-bootstrap';
         </h3>
         <p>Converted Philipp Spiess, React.js DOM contributors, newsletter website from static to dynamic. It now is build into static bundles using React-Static</p>
 
-        <PageHeader>
-            <small style={{color:'white'}}>Personal Projects</small>
-        </PageHeader>
+        <div className="pb-2 mt-4 mb-2 border-bottom">
+            <h3>Personal Projects</h3>
+        </div>
 
         <h3>
             <a href = 'http://taapp.cs.umd.edu'>
@@ -41,7 +40,7 @@ import { PageHeader } from 'react-bootstrap';
         Created and proposed a full stack web application for potential TA to apply which got accepted by the CS Department. Currently under active development. This project uses various technologies like JavaScript, its libraries in the frontend and PHP and MySQL in the backend. 
         </p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '0 auto', padding: '20px 0px'}}/>
+        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
 
         <h3>
             <a href = 'https://github.com/Apoorv-Mittal/Predicting-Taxi-Fare'>
@@ -54,7 +53,7 @@ import { PageHeader } from 'react-bootstrap';
             
         </p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '0 auto', padding: '20px 0px'}}/>
+        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
 
         <h3>
             <a href = 'http://tsan.umd.edu/'>
@@ -66,7 +65,7 @@ import { PageHeader } from 'react-bootstrap';
         Created tsan.umd.edu for the Telecommunication program of UMD. Proposed it to the Student President for TSAN, who accepted and is currently deployed. This project is made in the Content Management System called, Blogger.
         </p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '0 auto', padding: '20px 0px'}}/>
+        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
 
         <h3>
             <a href = 'https://github.com/Apoorv-Mittal/Chatty-Online-Messaging-App-'>
@@ -78,7 +77,7 @@ import { PageHeader } from 'react-bootstrap';
         Used JavaScript, and Socket.io to make an online messaging app, which uses Node.js to on the server side and uses socket.io as web socket providing lightweight bidirectional real-time communication
         </p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '0 auto', padding: '20px 0px'}}/>
+        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
 
         <h3>
             <a href = 'https://github.com/Apoorv-Mittal/Meteor-Landing-Page'>
@@ -92,5 +91,5 @@ import { PageHeader } from 'react-bootstrap';
         
 
     </div>;
- 
- export default Projects;
+
+export default Projects;

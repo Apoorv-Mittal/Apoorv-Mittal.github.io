@@ -18,23 +18,12 @@ p {
   transform: translate(-50%, -50%);
 }
 
-nav > a {
+.nav-link  {
   color: #9d9d9d!important;
 }
 
-
-@media screen and (min-width:770px){
-  .dropdownLi {
-    color: black;
-    background-color: white;
-  }
-}
-
-
-
-.dropdownLi > a {
-  margin: -9px 0px -9px 0px;
-  padding: 9px !important;
+.nav-link:hover  {
+  color: white!important;
 }
 
 .background {
