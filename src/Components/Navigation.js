@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { NavLink } from "react-router-dom"
 
 
@@ -21,48 +21,11 @@ class Navigation extends Component {
             </NavItem>
 
             <NavItem componentClass={NavLink} href="/Work" to="/Work" eventKey={2}>
-              WORK EXPERIENCE
+              WORK
             </NavItem>
 
-            <NavDropdown eventKey={3} title="ACADEMIC EXPERIENCE" id="basic-nav-dropdown">
-
-              <MenuItem componentClass={NavLink} href="/CMSC451" to="/CMSC451"  eventKey={3.1} className ="dropdownLi">
-                Design and Analysis of Computer Algorithms
-              </MenuItem>
-
-              <MenuItem divider />
-
-              <MenuItem componentClass={NavLink} href="/CMSC422" to="/CMSC422"  eventKey={3.2} className ="dropdownLi">
-                Introduction to Machine Learning
-              </MenuItem>
-
-              <MenuItem divider />
-
-              <MenuItem componentClass={NavLink} href="/CMSC433" to="/CMSC433"  eventKey={3.3} className ="dropdownLi">
-                Programming Language Technologies and Paradigms
-              </MenuItem>
-
-              <MenuItem divider />
-
-              <MenuItem componentClass={NavLink} href="/CMSC420" to="/CMSC420"  eventKey={3.4} className ="dropdownLi">
-                Data Structures                
-              </MenuItem>
-
-              <MenuItem divider />
-
-              <MenuItem componentClass={NavLink} href="/CMSC320" to="/CMSC320" eventKey={3.5} className ="dropdownLi">
-                Introduction to Data Science
-              </MenuItem>
-
-              <MenuItem divider />
-
-              <MenuItem componentClass={NavLink} href="/CMSC330" to="/CMSC330" eventKey={3.6} className ="dropdownLi">
-                Organization of Programming Languages
-              </MenuItem>
-            </NavDropdown>
-
-            <NavItem componentClass={NavLink} href="/Projects" to="/Projects" eventKey={4}>
-              PERSONAL PROJECTS
+            <NavItem componentClass={NavLink} href="/Projects" to="/Projects" eventKey={3}>
+              PROJECTS
             </NavItem>
           </Nav>
 
