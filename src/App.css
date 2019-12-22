@@ -90,3 +90,9 @@ a:hover {
   text-decoration: none;
   color: green;
 }
+
+.project-divider {
+  border-bottom: 1px solid #eee;
+  width: 80%;
+  margin: 2% 10% 2% 10%;
+}

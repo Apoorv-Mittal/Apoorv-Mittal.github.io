@@ -17,7 +17,7 @@ const Projects = () =>
         </h3>
         <p>Contributed to the documentation for Facebook’s React.js and added explanations for passing props in the ‘Intro to React’ page. The PR can be found <a href='https://github.com/facebook/react/pull/10190'>here</a>.</p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
+        <div className="project-divider"/>
 
         <h3>
             <a href = 'https://github.com/philipp-spiess/this-week-in-react'>
@@ -40,7 +40,7 @@ const Projects = () =>
         Created and proposed a full stack web application for potential TA to apply which got accepted by the CS Department. Currently under active development. This project uses various technologies like JavaScript, its libraries in the frontend and PHP and MySQL in the backend. 
         </p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
+        <div className="project-divider"/>
 
         <h3>
             <a href = 'https://github.com/Apoorv-Mittal/Predicting-Taxi-Fare'>
@@ -53,7 +53,7 @@ const Projects = () =>
             
         </p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
+        <div className="project-divider"/>
 
         <h3>
             <a href = 'http://tsan.umd.edu/'>
@@ -65,7 +65,7 @@ const Projects = () =>
         Created tsan.umd.edu for the Telecommunication program of UMD. Proposed it to the Student President for TSAN, who accepted and is currently deployed. This project is made in the Content Management System called, Blogger.
         </p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
+        <div className="project-divider"/>
 
         <h3>
             <a href = 'https://github.com/Apoorv-Mittal/Chatty-Online-Messaging-App-'>
@@ -77,7 +77,7 @@ const Projects = () =>
         Used JavaScript, and Socket.io to make an online messaging app, which uses Node.js to on the server side and uses socket.io as web socket providing lightweight bidirectional real-time communication
         </p>
 
-        <div style={{borderBottom: '1px solid #eee', width: '80%', margin: '40px 0 20px 0'}}/>
+        <div className="project-divider"/>
 
         <h3>
             <a href = 'https://github.com/Apoorv-Mittal/Meteor-Landing-Page'>
