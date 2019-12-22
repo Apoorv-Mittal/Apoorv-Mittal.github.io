@@ -5,29 +5,46 @@ import { NavLink } from "react-router-dom"
 
 class Navigation extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      navExpanded: false
+    };
+  }
+
+  setNavExpanded = (expanded) => {
+    this.setState({ navExpanded: expanded });
+  }
+
+  closeNav = () => {
+    this.setState({ navExpanded: false });
+  }
+
+
   render() {
     return (
-      <Navbar variant="dark" >
+      <Navbar onToggle={this.setNavExpanded} 
+      expanded={this.state.navExpanded} variant="dark" expand="lg">
 
-        <Navbar.Toggle />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse>
-          <Nav>
+          <Nav id="basic-navbar-nav" >
 
-            <Nav.Item className="pl-2 pr-2">  
-            <NavLink className="nav-link" to="/">HOME</NavLink>
+            <Nav.Item className="pl-2 pr-2" >  
+            <NavLink className="nav-link" to="/" onClick={this.closeNav}>HOME</NavLink>
             </Nav.Item>
 
             <Nav.Item className="pl-2 pr-2">
-            <NavLink className="nav-link" to="/Work">WORK</NavLink>
+            <NavLink className="nav-link" to="/Work" onClick={this.closeNav}>WORK</NavLink>
             </Nav.Item>
 
             <Nav.Item className="pl-2 pr-2">
-            <NavLink className="nav-link" to="/Projects">PROJECTS</NavLink>
+            <NavLink className="nav-link" to="/Projects" onClick={this.closeNav}>PROJECTS</NavLink>
             </Nav.Item>
           </Nav>
 
-          <Nav>
+          <Nav  className="ml-auto">
             <Nav.Item className="pl-2 pr-2">
             <a className="nav-link" href="mailto:apoorv@terpmail.umd.edu">CONTACT ME</a>
             </Nav.Item>
