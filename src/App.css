@@ -7,10 +7,6 @@ p {
   font-size: calc(10px + 1vmin)!important;
 }
 
-.vertical-timeline-element-title {
-  font-size: 2.5em!important;
-}
-
 .vertical-timeline-element-icon > i, .center {
   position: absolute;
   top: 50%;

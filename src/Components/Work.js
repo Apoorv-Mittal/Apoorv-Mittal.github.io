@@ -18,8 +18,8 @@ class Timeline extends Component {
                     iconStyle={{ textAlign: 'center' }}
                     icon={<Image className="w-100" src={drfirst} roundedCircle />}
                 >
-                    <h3>Software Engineering Intern</h3>
-                    <h4>DrFirst </h4>
+                    <h3 className="vertical-timeline-element-title">Software Engineering Intern</h3>
+                    <h4 className="vertical-timeline-element-subtitle">DrFirst </h4>
                     <p>
                         - Designed and developed RESTful apis in Spring Boot Integration server for DrFirst’s e-prescribing mobile app to support a new third-party identity proofing system. Helped come up with the changes required in two other applications for this integration
                         <br />
@@ -40,8 +40,8 @@ class Timeline extends Component {
                     iconStyle={{ textAlign: 'center' }}
                     icon={<Image className="w-100" src={jqi} roundedCircle />}
                 >
-                    <h3>Web Developer</h3>
-                    <h4>Joint Quantum Institute</h4>
+                    <h3 className="vertical-timeline-element-title">Web Developer</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Joint Quantum Institute</h4>
                     <p>
                         I am a Web developer working with Emily Edwards and Chris Cesare  from Joint Quantum Institute at the University of Maryland and the National Institute of Standards and Technology, College Park.<br />
                         <br />
@@ -63,8 +63,8 @@ class Timeline extends Component {
                     iconStyle={{ textAlign: 'center' }}
                     icon={<Image className="w-100" src={umd} roundedCircle />}
                 >
-                    <h3>Student System Administrator</h3>
-                    <h4>Department of Computer Science, University of Maryland</h4>
+                    <h3 className="vertical-timeline-element-title">Student System Administrator</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Department of Computer Science, University of Maryland</h4>
                     <p>
                         - Maintaining the CS Department network, managing Mail Servers, VLAN network and Web Servers<br />
                         - Setting up VMs and new Red Hat Systems through Cobbler and managing them through Puppet<br />
@@ -77,8 +77,8 @@ class Timeline extends Component {
                     iconStyle={{ textAlign: 'center' }}
                     icon={<Image className="w-100" src={umd} roundedCircle />}
                 >
-                    <h3>Teaching Assistant</h3>
-                    <h4>Department of Computer Science, University of Maryland</h4>
+                    <h3 className="vertical-timeline-element-title">Teaching Assistant</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Department of Computer Science, University of Maryland</h4>
                     <p>
                         - Teaching assistant for Dr. Evan Golub, Dr Roger Eastman and Dr. Ilchul Yoon teaching Object Oriented Programming. <br />
                         - Taught a class of 30 student and held office hours to provide help for programming assignments <br />
@@ -90,8 +90,8 @@ class Timeline extends Component {
                     iconStyle={{ textAlign: 'center' }}
                     icon={<Image className="w-100" src={umd} roundedCircle />}
                 >
-                    <h3>Student Web Developer</h3>
-                    <h4>Department of Resident Life, University of Maryland</h4>
+                    <h3 className="vertical-timeline-element-title">Student Web Developer</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Department of Resident Life, University of Maryland</h4>
                     <p>
                         -	Migrated the website from Static to Dynamic (Drupal)<br />
                         -	Managed Department of Resident Life and Counselling center website and made the websites web accessible<br />
@@ -105,8 +105,8 @@ class Timeline extends Component {
                     iconStyle={{ textAlign: 'center' }}
                     icon={<Image className="w-100" src={umd} roundedCircle />}
                 >
-                    <h3>Undergraduate Research Assistant</h3>
-                    <h4>Department of Criminology and Criminal Justice, University of Maryland</h4>
+                    <h3 className="vertical-timeline-element-title">Undergraduate Research Assistant</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Department of Criminology and Criminal Justice, University of Maryland</h4>
                     <p>
                         Research Assistant under Dr. David Maimon from University of Maryland Cybersecurity Center and the Department of Criminology and Criminal Justice.<br />
                         <br />
@@ -126,8 +126,8 @@ class Timeline extends Component {
                     iconStyle={{ textAlign: 'center' }}
                     icon={<Image className="w-100" src={umd} roundedCircle />}
                 >
-                    <h3>Undergraduate Research Assistant</h3>
-                    <h4>Maryland Information and Network Dynamics</h4>
+                    <h3 className="vertical-timeline-element-title">Undergraduate Research Assistant</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Maryland Information and Network Dynamics</h4>
                     <p>
                         -	Worked under Professor Dr. Ashok Agarawala and PhD candidates and assisting them in Lab’s daily operations.
             <br />
@@ -140,7 +140,7 @@ class Timeline extends Component {
                     iconStyle={{ textAlign: 'center' }}
                     icon={<Image className="w-100" src={umd} roundedCircle />}
                 >
-                    <h3>Bachelor's @ University of Maryland - College Park</h3>
+                    <h3 className="vertical-timeline-element-title">Bachelor's @ University of Maryland - College Park</h3>
                     <p>
                         Major: Computer Science
                     </p>
