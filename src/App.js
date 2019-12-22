@@ -1,6 +1,5 @@
 import React, { Component, lazy, Suspense } from 'react';
 import { Switch, Route, HashRouter } from 'react-router-dom';
-import Spinner from 'react-bootstrap/Spinner';
 import FrontPage from './Components/FrontPage';
 import Work from './Components/Work';
 import Projects from './Components/Projects/Projects';
@@ -14,13 +13,13 @@ import CMSC330 from './Components/CMSC330/CMSC330';
 import './App.css';
 import { start,unmount } from "./Components/Background";
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-100589361-2');
 
 const Navigation = lazy(() => import('./Components/Navigation'));
 
 class App extends Component {
 
   componentDidMount() {
+    ReactGA.initialize('UA-100589361-2');
     let canvas = this.refs.canvas
     start(canvas)
     ReactGA.pageview(window.location.pathname + window.location.search)
@@ -40,7 +39,7 @@ class App extends Component {
         <div className="App">
           <canvas ref="canvas" className="background" />
 
-          <Suspense fallback={<Spinner animation="grow" />}>
+          <Suspense fallback={<div>Loading...</div>}>
             <Navigation/>
           </Suspense>
 
