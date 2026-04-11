@@ -45,7 +45,7 @@ class Navigation extends Component {
 
           <Nav className="ml-auto">
             <Nav.Item className="pl-2 pr-2">
-              <a className="nav-link" href="mailto:apoorv@terpmail.umd.edu">CONTACT ME</a>
+              <a className="nav-link" href="mailto:pingapoorv@gmail.com">CONTACT ME</a>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
