@@ -14,6 +14,18 @@ class Timeline extends Component {
             <VerticalTimeline className="timeline">
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work timeline-ele"
+                    date="February 2020 - Present"
+                    iconStyle={{ background: '#fff', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                    icon={<i className="fa fa-google fa-2x" style={{ color: '#4285F4' }} />}
+                >
+                    <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Google</h4>
+                    <p>
+                        - Working on AI agents for internal contracting applications, building intelligent systems to streamline procurement and contracting workflows<br />
+                    </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work timeline-ele"
                     date="June 2019 - November 2019"
                     iconStyle={{ textAlign: 'center' }}
                     icon={<Image className="w-100" src={drfirst} roundedCircle />}
