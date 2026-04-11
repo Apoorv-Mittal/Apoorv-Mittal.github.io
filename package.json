@@ -4,7 +4,7 @@
   "homepage": "https://apoorv-mittal.github.io",
   "private": false,
   "dependencies": {
-    "bootstrap": "^4.6.2",
+    "bootstrap": "^5.3.8",
     "font-awesome": "^4.7.0",
     "react": "^19.2.5",
     "react-bootstrap": "^2.10.10",
