@@ -16,11 +16,11 @@ jobs:
       with:
         node-version: '20'
     - name: NPM install
-      run:
-        npm install
+      run: npm install
     - name: NPM build
-      run:
-        npm run build
+      run: npm run build
+      env:
+        NODE_OPTIONS: --openssl-legacy-provider
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
