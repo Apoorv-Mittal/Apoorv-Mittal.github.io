@@ -1,34 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.579f9119.chunk.css",
-    "main.js": "/static/js/main.bd123093.chunk.js",
-    "main.js.map": "/static/js/main.bd123093.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f20d693b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f20d693b.js.map",
-    "static/css/2.7e18bdc1.chunk.css": "/static/css/2.7e18bdc1.chunk.css",
-    "static/js/2.6c51da80.chunk.js": "/static/js/2.6c51da80.chunk.js",
-    "static/js/2.6c51da80.chunk.js.map": "/static/js/2.6c51da80.chunk.js.map",
-    "static/js/3.81912cbf.chunk.js": "/static/js/3.81912cbf.chunk.js",
-    "static/js/3.81912cbf.chunk.js.map": "/static/js/3.81912cbf.chunk.js.map",
-    "static/js/4.cd93bb7b.chunk.js": "/static/js/4.cd93bb7b.chunk.js",
-    "static/js/4.cd93bb7b.chunk.js.map": "/static/js/4.cd93bb7b.chunk.js.map",
+    "main.css": "/static/css/main.8b55fb7c.css",
+    "main.js": "/static/js/main.6a2947f7.js",
+    "static/js/963.0d3ec15e.chunk.js": "/static/js/963.0d3ec15e.chunk.js",
+    "static/js/145.a6771320.chunk.js": "/static/js/145.a6771320.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/myPhoto.jpg": "/static/media/myPhoto.5680a3737c18a6cc1f15.jpg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/Resume.pdf": "/static/media/Resume.78e5714162d339f22e7b.pdf",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/jqi.png": "/static/media/jqi.652d1fbedf69d6b63913.png",
+    "static/media/umd.png": "/static/media/umd.82fc72aa1cb1cfaa25ad.png",
     "index.html": "/index.html",
-    "precache-manifest.530029f03252f7200cad0d6b021392f6.js": "/precache-manifest.530029f03252f7200cad0d6b021392f6.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.7e18bdc1.chunk.css.map": "/static/css/2.7e18bdc1.chunk.css.map",
-    "static/css/main.579f9119.chunk.css.map": "/static/css/main.579f9119.chunk.css.map",
-    "static/js/2.6c51da80.chunk.js.LICENSE": "/static/js/2.6c51da80.chunk.js.LICENSE",
-    "static/media/Resume.pdf": "/static/media/Resume.21302dad.pdf",
-    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/jqi.png": "/static/media/jqi.8a557593.png",
-    "static/media/myPhoto.jpg": "/static/media/myPhoto.f7ecf73d.jpg",
-    "static/media/umd.png": "/static/media/umd.5b58cdc5.png"
+    "main.8b55fb7c.css.map": "/static/css/main.8b55fb7c.css.map",
+    "main.6a2947f7.js.map": "/static/js/main.6a2947f7.js.map",
+    "963.0d3ec15e.chunk.js.map": "/static/js/963.0d3ec15e.chunk.js.map",
+    "145.a6771320.chunk.js.map": "/static/js/145.a6771320.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.f20d693b.js",
-    "static/css/2.7e18bdc1.chunk.css",
-    "static/js/2.6c51da80.chunk.js",
-    "static/css/main.579f9119.chunk.css",
-    "static/js/main.bd123093.chunk.js"
+    "static/css/main.8b55fb7c.css",
+    "static/js/main.6a2947f7.js"
   ]
 }
