@@ -9,19 +9,21 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
-    - name: NPM install 
-      run: 
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    - name: NPM install
+      run:
         npm install
-    - name: NPM build 
-      run: 
+    - name: NPM build
+      run:
         npm run build
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.2.0
-      env:
-        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-        PUBLISH_BRANCH: master
-        PUBLISH_DIR: ./build
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        publish_branch: master
+        publish_dir: ./build
