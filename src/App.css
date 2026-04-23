@@ -34,7 +34,7 @@ p {
   background-color: #282c34;
 }
 
-@media screen and (min-width:1170px){
+@media screen and (min-width: 1170px) {
   .vertical-timeline-element-content .vertical-timeline-element-date {
     color: white!important;
     padding-left: 10%;
@@ -65,24 +65,20 @@ p {
   padding: 0px 40px 40px 40px;
 }
 
-i {
+.App i {
   padding: 0.5rem;
   color: whitesmoke;
 }
 
-i:hover {
+.App i:hover {
   color: yellow;
 }
 
-i:visited {
-  color: green;
-}
-
-a {
+.App a {
   color: red;
 }
 
-a:hover {
+.App a:hover {
   text-decoration: none;
   color: green;
 }

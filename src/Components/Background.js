@@ -1,11 +1,11 @@
-let canvas 
-let cx
+let canvas
+let ctx
 
 const INCREMENT = 12345
     , MULTIPLIER = 1103515245
     , MODULUS = Math.pow(2, 31)
 
-// Todo esto son inputs del nodo generador
+// LCG random generator inputs
 const stepX = 16
     , stepY = 16
     , sizeX = 1
@@ -40,19 +40,18 @@ function createRandom(initialSeed = 0) {
 const random = createRandom()
 
 function frame(frameTime) {
-  // First element
-  cx.clearRect(0,0,cx.canvas.width,cx.canvas.height)
-  for (let y = marginTop; y < cx.canvas.height - marginBottom; y += stepY) {
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
+  for (let y = marginTop; y < ctx.canvas.height - marginBottom; y += stepY) {
     random.reset(y)
-    for (let x = marginLeft; x < cx.canvas.width - marginRight; x += stepX) {
+    for (let x = marginLeft; x < ctx.canvas.width - marginRight; x += stepX) {
       const randomValue = random.get()
       const distX = randomValue * 16
       const distY = randomValue * 16
       const phase = randomValue * Math.PI * 2
-      cx.fillStyle = '#000'
-      cx.fillRect(
-        x, 
-        y, 
+      ctx.fillStyle = '#000'
+      ctx.fillRect(
+        x,
+        y,
         sizeX + Math.sin(phase + frameTime / 1000) * distX,
         sizeY + Math.cos(phase + frameTime / 1000) * distY
       )
@@ -66,16 +65,20 @@ function resize() {
   canvas.height = canvas.clientHeight
 }
 
-function start(c) {
-  canvas = c;
-  cx = canvas.getContext('2d')
+function start(canvasEl) {
+  if (!canvasEl) return
+  const context = canvasEl.getContext('2d')
+  if (!context) return
+  canvas = canvasEl
+  ctx = context
   window.addEventListener('resize', resize)
   window.dispatchEvent(new Event('resize'))
-  
   frameID = window.requestAnimationFrame(frame)
 }
 
-function unmount(){
-    cancelAnimationFrame(frameID)
+function unmount() {
+  cancelAnimationFrame(frameID)
+  window.removeEventListener('resize', resize)
 }
-export { start,unmount };
+
+export { start, unmount };

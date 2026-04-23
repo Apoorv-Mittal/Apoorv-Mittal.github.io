@@ -12,10 +12,11 @@ const Navigation = lazy(() => import('./Components/Navigation'));
 
 class App extends Component {
 
+  canvasRef = React.createRef()
+
   componentDidMount() {
     ReactGA.initialize('UA-100589361-2');
-    let canvas = this.refs.canvas
-    start(canvas)
+    start(this.canvasRef.current)
     ReactGA.pageview(window.location.pathname + window.location.search)
   }
 
@@ -23,7 +24,7 @@ class App extends Component {
     unmount()
   }
 
-  componentDidUpdate(...ele) {
+  componentDidUpdate() {
     ReactGA.pageview(window.location.hash.substring(1))
   }
 
@@ -31,7 +32,7 @@ class App extends Component {
     return (
       <HashRouter>
         <div className="App">
-          <canvas ref="canvas" className="background" />
+          <canvas ref={this.canvasRef} className="background" />
 
           <Suspense fallback={<div>Loading...</div>}>
             <Navigation/>
