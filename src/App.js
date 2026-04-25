@@ -1,5 +1,5 @@
 import React, { Component, lazy, Suspense } from 'react';
-import { Switch, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import FrontPage from './Components/FrontPage';
 import Work from './Components/Work';
 import Projects from './Components/Projects/Projects';
@@ -38,12 +38,12 @@ class App extends Component {
             <Navigation/>
           </Suspense>
 
-          <Switch>
-            <Route exact path={`/`} render={() => <FrontPage/>} />
-            <Route exact path={`/Work`} render={() => <Work/>} />
-            <Route exact path={`/Projects`} render={() => <Projects/>} />
-            <Route exact path='*' render={() => <NotFound/>} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<FrontPage/>} />
+            <Route path="/Work" element={<Work/>} />
+            <Route path="/Projects" element={<Projects/>} />
+            <Route path="*" element={<NotFound/>} />
+          </Routes>
           
         </div>
       </HashRouter>
