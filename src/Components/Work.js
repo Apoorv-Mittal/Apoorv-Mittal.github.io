@@ -116,7 +116,7 @@ class Timeline extends Component {
                         - Creating automated scripts to set up new accounts, web pages and VMs on CS servers<br />
                     </p>
                     <div className="work-tech-tags">
-                        {['Linux', 'Red Hat', 'Puppet', 'Cobbler', 'Bash'].map(tag => (
+                        {['Linux', 'Red Hat', 'Puppet', 'Bash'].map(tag => (
                             <span key={tag} className="work-tech-tag">{tag}</span>
                         ))}
                     </div>
@@ -199,7 +199,7 @@ class Timeline extends Component {
                         -	Created an Android app to help determine the exact location of a person including the room and the floor of the building using Wi-Fi access points.
             </p>
                     <div className="work-tech-tags">
-                        {['Android', 'Java', 'Wi-Fi Positioning'].map(tag => (
+                        {['Android', 'Java'].map(tag => (
                             <span key={tag} className="work-tech-tag">{tag}</span>
                         ))}
                     </div>
