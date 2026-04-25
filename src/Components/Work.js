@@ -68,6 +68,11 @@ class Timeline extends Component {
                         <br />
                         - Collaborated and participated in daily Scrum/Agile meetings, code reviews, and sprint planning
             </p>
+                    <div className="work-tech-tags">
+                        {['Java', 'Spring Boot', 'RESTful APIs', 'SSO', 'Agile / Scrum'].map(tag => (
+                            <span key={tag} className="work-tech-tag">{tag}</span>
+                        ))}
+                    </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work timeline-ele"
@@ -91,6 +96,11 @@ class Timeline extends Component {
                         - Also maintaining the existing Joint Quantum Institute website, updating its individual Drupal modules and working on upgrading the Drupal core from 7 to 8. <br />
                         - Created a Drupal website for Condensed Matter Theory Center at UMD<br />
                     </p>
+                    <div className="work-tech-tags">
+                        {['React.js', 'Three.js', 'GSAP', 'Styled Components', 'Drupal'].map(tag => (
+                            <span key={tag} className="work-tech-tag">{tag}</span>
+                        ))}
+                    </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work timeline-ele"
@@ -105,6 +115,11 @@ class Timeline extends Component {
                         - Setting up VMs and new Red Hat Systems through Cobbler and managing them through Puppet<br />
                         - Creating automated scripts to set up new accounts, web pages and VMs on CS servers<br />
                     </p>
+                    <div className="work-tech-tags">
+                        {['Linux', 'Red Hat', 'Puppet', 'Cobbler', 'Bash'].map(tag => (
+                            <span key={tag} className="work-tech-tag">{tag}</span>
+                        ))}
+                    </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work timeline-ele"
@@ -118,6 +133,11 @@ class Timeline extends Component {
                         - Teaching assistant for Dr. Evan Golub, Dr Roger Eastman and Dr. Ilchul Yoon teaching Object Oriented Programming. <br />
                         - Taught a class of 30 student and held office hours to provide help for programming assignments <br />
                     </p>
+                    <div className="work-tech-tags">
+                        {['Java', 'OOP'].map(tag => (
+                            <span key={tag} className="work-tech-tag">{tag}</span>
+                        ))}
+                    </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work timeline-ele"
@@ -133,6 +153,11 @@ class Timeline extends Component {
                         -	Created digital marketing materials for the web, social media, and e-mail marketing targeted towards students and parents <br />
                         -	Enhanced their guidebook app and making it more suitable for students<br />
                     </p>
+                    <div className="work-tech-tags">
+                        {['Drupal', 'HTML / CSS', 'Web Accessibility'].map(tag => (
+                            <span key={tag} className="work-tech-tag">{tag}</span>
+                        ))}
+                    </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work timeline-ele"
@@ -154,6 +179,11 @@ class Timeline extends Component {
                         -Capturing primary data on the WiFi activity of network users on Linux in real-time utilizing a host system connected to Verizon MiFi broadband wireless router.<br />
                         -Mapping the layout and movement at source points, as well as monitoring and analysis of sniffed packets from users in potential research locations spread across Washington DC, Maryland and Virginia.<br />
                     </p>
+                    <div className="work-tech-tags">
+                        {['Linux', 'Windows Server', 'Wireshark', 'VirtualBox', 'Network Analysis'].map(tag => (
+                            <span key={tag} className="work-tech-tag">{tag}</span>
+                        ))}
+                    </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work timeline-ele"
@@ -168,6 +198,11 @@ class Timeline extends Component {
             <br />
                         -	Created an Android app to help determine the exact location of a person including the room and the floor of the building using Wi-Fi access points.
             </p>
+                    <div className="work-tech-tags">
+                        {['Android', 'Java', 'Wi-Fi Positioning'].map(tag => (
+                            <span key={tag} className="work-tech-tag">{tag}</span>
+                        ))}
+                    </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education timeline-ele"
