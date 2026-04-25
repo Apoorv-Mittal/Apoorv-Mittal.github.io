@@ -1,0 +1,22 @@
+name: PR Build Check
+
+on:
+  pull_request:
+    branches:
+      - React
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: NPM install
+        run: npm install
+      - name: NPM build
+        run: npm run build
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
