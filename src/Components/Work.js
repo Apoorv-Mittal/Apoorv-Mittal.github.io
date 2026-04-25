@@ -21,20 +21,20 @@ class Timeline extends Component {
                     <h3 className="vertical-timeline-element-title">Software Engineer (L3 → L6)</h3>
                     <h4 className="vertical-timeline-element-subtitle">Google</h4>
                     <div>
-                        <p className="work-phase-label">Full-Stack Engineering</p>
+                        <div className="work-phase-label">Full-Stack Engineering</div>
                         <p>
                             – Built and shipped multiple large-scale features for Google's internal contracting platform, impacting <strong>20,000+ sales people</strong> and reducing contract turnaround time from <strong>months to weeks</strong><br />
                             – Promoted from L3 to L5 within 2.5 years; led a team of up to <strong>10 engineers</strong> at L5<br />
                             – Owned end-to-end delivery across frontend and backend using Java, TypeScript, Spanner, RPC, and Borg
                         </p>
 
-                        <p className="work-phase-label">LLM-Powered Data Extraction</p>
+                        <div className="work-phase-label">LLM-Powered Data Extraction</div>
                         <p>
                             – Designed and built LLM-powered data extraction pipelines using Gemini and Vertex AI, saving the business <strong>$50M+ annually</strong> by automating contract data processing<br />
                             – Promoted to <strong>L6</strong> in recognition of technical scope and business impact
                         </p>
 
-                        <p className="work-phase-label">AI Agents</p>
+                        <div className="work-phase-label">AI Agents</div>
                         <p>
                             – Building two AI agents with Google ADK: a contract drafting agent that guides non-experts through end-to-end contract creation, and a contract retrieval &amp; analysis agent for fast information lookup and insights<br />
                             – Driving adoption of agentic workflows across Google's contracting organization
