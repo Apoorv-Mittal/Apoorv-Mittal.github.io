@@ -18,11 +18,34 @@ class Timeline extends Component {
                     iconStyle={{ background: '#fff', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                     icon={<i className="fa fa-google fa-2x" style={{ color: '#4285F4' }} />}
                 >
-                    <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+                    <h3 className="vertical-timeline-element-title">Software Engineer (L3 → L6)</h3>
                     <h4 className="vertical-timeline-element-subtitle">Google</h4>
-                    <p>
-                        - Working on AI agents for internal contracting applications, building intelligent systems to streamline procurement and contracting workflows<br />
-                    </p>
+                    <div>
+                        <p className="work-phase-label">Full-Stack Engineering</p>
+                        <p>
+                            – Built and shipped multiple large-scale features for Google's internal contracting platform, impacting <strong>20,000+ sales people</strong> and reducing contract turnaround time from <strong>months to weeks</strong><br />
+                            – Promoted from L3 to L5 within 2.5 years; led a team of up to <strong>10 engineers</strong> at L5<br />
+                            – Owned end-to-end delivery across frontend and backend using Java, TypeScript, Spanner, RPC, and Borg
+                        </p>
+
+                        <p className="work-phase-label">LLM-Powered Data Extraction</p>
+                        <p>
+                            – Designed and built LLM-powered data extraction pipelines using Gemini and Vertex AI, saving the business <strong>$50M+ annually</strong> by automating contract data processing<br />
+                            – Promoted to <strong>L6</strong> in recognition of technical scope and business impact
+                        </p>
+
+                        <p className="work-phase-label">AI Agents</p>
+                        <p>
+                            – Building two AI agents with Google ADK: a contract drafting agent that guides non-experts through end-to-end contract creation, and a contract retrieval &amp; analysis agent for fast information lookup and insights<br />
+                            – Driving adoption of agentic workflows across Google's contracting organization
+                        </p>
+
+                        <div className="work-tech-tags">
+                            {['Java', 'TypeScript', 'Python', 'Gemini / Vertex AI', 'Google ADK', 'Spanner', 'RPC / Borg'].map(tag => (
+                                <span key={tag} className="work-tech-tag">{tag}</span>
+                            ))}
+                        </div>
+                    </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work timeline-ele"
