@@ -11,22 +11,15 @@
     "react-dom": "^19.2.5",
     "react-ga": "^3.3.1",
     "react-router-dom": "^7.14.2",
-    "react-scripts": "5.0.1",
     "react-vertical-timeline-component": "^4.0.0"
   },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.3.3"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
 }

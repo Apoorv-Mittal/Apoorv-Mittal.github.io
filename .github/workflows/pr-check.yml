@@ -18,5 +18,3 @@ jobs:
         run: npm install
       - name: NPM build
         run: npm run build
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
