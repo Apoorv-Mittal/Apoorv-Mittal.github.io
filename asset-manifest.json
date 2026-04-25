@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4a23cd84.css",
-    "main.js": "/static/js/main.3b08fed9.js",
+    "main.js": "/static/js/main.3f52d94e.js",
     "static/js/963.a0d14218.chunk.js": "/static/js/963.a0d14218.chunk.js",
     "static/js/709.6f3966c2.chunk.js": "/static/js/709.6f3966c2.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -15,12 +15,12 @@
     "static/media/umd.png": "/static/media/umd.82fc72aa1cb1cfaa25ad.png",
     "index.html": "/index.html",
     "main.4a23cd84.css.map": "/static/css/main.4a23cd84.css.map",
-    "main.3b08fed9.js.map": "/static/js/main.3b08fed9.js.map",
+    "main.3f52d94e.js.map": "/static/js/main.3f52d94e.js.map",
     "963.a0d14218.chunk.js.map": "/static/js/963.a0d14218.chunk.js.map",
     "709.6f3966c2.chunk.js.map": "/static/js/709.6f3966c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a23cd84.css",
-    "static/js/main.3b08fed9.js"
+    "static/js/main.3f52d94e.js"
   ]
 }
