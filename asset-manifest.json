@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b55fb7c.css",
-    "main.js": "/static/js/main.1791c84b.js",
-    "static/js/963.ac2b7b44.chunk.js": "/static/js/963.ac2b7b44.chunk.js",
-    "static/js/208.1db614f8.chunk.js": "/static/js/208.1db614f8.chunk.js",
+    "main.css": "/static/css/main.c27d3fa3.css",
+    "main.js": "/static/js/main.63e9c127.js",
+    "static/js/963.a0d14218.chunk.js": "/static/js/963.a0d14218.chunk.js",
+    "static/js/709.6f3966c2.chunk.js": "/static/js/709.6f3966c2.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -14,13 +14,13 @@
     "static/media/jqi.png": "/static/media/jqi.652d1fbedf69d6b63913.png",
     "static/media/umd.png": "/static/media/umd.82fc72aa1cb1cfaa25ad.png",
     "index.html": "/index.html",
-    "main.8b55fb7c.css.map": "/static/css/main.8b55fb7c.css.map",
-    "main.1791c84b.js.map": "/static/js/main.1791c84b.js.map",
-    "963.ac2b7b44.chunk.js.map": "/static/js/963.ac2b7b44.chunk.js.map",
-    "208.1db614f8.chunk.js.map": "/static/js/208.1db614f8.chunk.js.map"
+    "main.c27d3fa3.css.map": "/static/css/main.c27d3fa3.css.map",
+    "main.63e9c127.js.map": "/static/js/main.63e9c127.js.map",
+    "963.a0d14218.chunk.js.map": "/static/js/963.a0d14218.chunk.js.map",
+    "709.6f3966c2.chunk.js.map": "/static/js/709.6f3966c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b55fb7c.css",
-    "static/js/main.1791c84b.js"
+    "static/css/main.c27d3fa3.css",
+    "static/js/main.63e9c127.js"
   ]
 }
