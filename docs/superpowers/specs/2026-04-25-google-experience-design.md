@@ -43,6 +43,5 @@ Java · TypeScript · Python · Gemini / Vertex AI · Google ADK · Spanner · R
 ## Implementation
 
 - Edit `src/Components/Work.js`: replace the single `<p>` inside the Google `VerticalTimelineElement` with the three-phase structure
-- Add inline styles for phase labels (small uppercase, Google blue `#4285F4`) and tech tag spans (blue pill style matching the mockup)
+- Add CSS classes to `src/App.css` for phase labels and tech tags — no inline styles
 - No new dependencies required
-- No changes to any other file
